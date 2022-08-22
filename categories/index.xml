@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ssdreamC·凉月</title>
+    <link>http://localhost/categories/</link>
+    <description>Recent content in Categories on ssdreamC·凉月</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 19 Aug 2022 11:14:12 +0800</lastBuildDate><atom:link href="http://localhost/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记录</title>
+      <link>http://localhost/categories/%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 19 Aug 2022 11:14:12 +0800</pubDate>
+      
+      <guid>http://localhost/categories/%E8%AE%B0%E5%BD%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>国产化</title>
+      <link>http://localhost/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/</link>
+      <pubDate>Thu, 18 Aug 2022 23:26:12 +0800</pubDate>
+      
+      <guid>http://localhost/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

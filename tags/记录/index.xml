@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>记录 on ssdreamC·凉月</title>
+    <link>http://localhost/tags/%E8%AE%B0%E5%BD%95/</link>
+    <description>Recent content in 记录 on ssdreamC·凉月</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 19 Aug 2022 11:14:12 +0800</lastBuildDate><atom:link href="http://localhost/tags/%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇测试稿</title>
+      <link>http://localhost/posts/my-first-post/</link>
+      <pubDate>Fri, 19 Aug 2022 11:14:12 +0800</pubDate>
+      
+      <guid>http://localhost/posts/my-first-post/</guid>
+      <description>这是第一篇测试文章，hogo支持markdown就很开心；
+当我准备差不多了我就搞个 gitee 的 page……
+记录Link to heading2022-08-22 10:35:13
+先试用hogo-code的主题
+git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder 发现：
+设置可以写在主题的config.toml中，也可以写在主目录的config.toml中 图片等资源默认应该放入主目录下的static中 2022-08-22 11:01:27
+标签和分类
+[taxonomies] tag = &amp;#34;tags&amp;#34; category = &amp;#34;categories&amp;#34; --- title: &amp;#34;第一篇测试稿&amp;#34; date: 2022-08-19T11:14:12+08:00 tags: [&amp;#34;记录&amp;#34;, &amp;#34;hugo&amp;#34;] categories: [&amp;#34;记录&amp;#34;] --- 2022-08-22 18:25:03
+hugo 的目录说明：
+archetypes，原型或者说模板，hugo new 的时候使用的 assets，资产，默认不创建 config，设置，默认不会创建而是只有一个config.toml Hugo ships with a large number of configuration directives. The config directory is where those directives are stored as JSON, YAML, or TOML files.</description>
+    </item>
+    
+  </channel>
+</rss>

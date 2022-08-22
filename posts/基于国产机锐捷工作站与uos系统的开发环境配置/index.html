@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>
+  基于国产机锐捷工作站与UOS系统的开发环境配置 · ssdreamC·凉月
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="ssdreamC·凉月">
+<meta name="description" content="适用 USO 1.0根系统（deepin v23）发布前版本
+0. 正常使用建议Link to heading原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free注释掉即可正常更新 需要使用系统设置来更新，UOS大版本更新使用apt会出现依赖错误； QQ 推荐 QQ纯净版；微信推荐UOS版（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定 搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法官网下载个人版 1. jdk 与 mavenLink to headingjava -version 发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:
+下载相关文件: https://docs.microsoft.com/zh-cn/java/openjdk/download 解压 sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/ 编辑 ~/.bashrc export JAVA_HOME=/usr/local/java/jdk-17.0.4&#43;8 export JRE_HOME=${JAVA_HOME} export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH 使之生效 source ~/.bashrc 检查 java -version 安装 maven 类似">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="基于国产机锐捷工作站与UOS系统的开发环境配置"/>
+<meta name="twitter:description" content="适用 USO 1.0根系统（deepin v23）发布前版本
+0. 正常使用建议Link to heading原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free注释掉即可正常更新 需要使用系统设置来更新，UOS大版本更新使用apt会出现依赖错误； QQ 推荐 QQ纯净版；微信推荐UOS版（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定 搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法官网下载个人版 1. jdk 与 mavenLink to headingjava -version 发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:
+下载相关文件: https://docs.microsoft.com/zh-cn/java/openjdk/download 解压 sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/ 编辑 ~/.bashrc export JAVA_HOME=/usr/local/java/jdk-17.0.4&#43;8 export JRE_HOME=${JAVA_HOME} export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH 使之生效 source ~/.bashrc 检查 java -version 安装 maven 类似"/>
+
+<meta property="og:title" content="基于国产机锐捷工作站与UOS系统的开发环境配置" />
+<meta property="og:description" content="适用 USO 1.0根系统（deepin v23）发布前版本
+0. 正常使用建议Link to heading原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free注释掉即可正常更新 需要使用系统设置来更新，UOS大版本更新使用apt会出现依赖错误； QQ 推荐 QQ纯净版；微信推荐UOS版（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定 搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法官网下载个人版 1. jdk 与 mavenLink to headingjava -version 发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:
+下载相关文件: https://docs.microsoft.com/zh-cn/java/openjdk/download 解压 sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/ 编辑 ~/.bashrc export JAVA_HOME=/usr/local/java/jdk-17.0.4&#43;8 export JRE_HOME=${JAVA_HOME} export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH 使之生效 source ~/.bashrc 检查 java -version 安装 maven 类似" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-18T23:26:12+08:00" />
+<meta property="article:modified_time" content="2022-08-18T23:26:12+08:00" />
+
+
+
+
+
+<link rel="canonical" href="http://localhost/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      ssdreamC·凉月
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+              基于国产机锐捷工作站与UOS系统的开发环境配置
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-18T23:26:12&#43;08:00">
+                August 18, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读时间：2 分钟
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/">国产化</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/%E5%9B%BD%E4%BA%A7%E5%8C%96/">国产化</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/uos/">uos</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87/">国产芯片</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>适用 USO 1.0根系统（deepin v23）发布前版本</p>
+<h2 id="0-正常使用建议">
+  0. 正常使用建议
+  <a class="heading-link" href="#0-%e6%ad%a3%e5%b8%b8%e4%bd%bf%e7%94%a8%e5%bb%ba%e8%ae%ae">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>原有商店已废弃，<code>sudo apt install deepin-app-store</code> 安装深度商店（已废弃的商店不用卸载）</li>
+<li>将 <code>/etc/apt/sources.list</code> 中<code>deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free</code>注释掉即可正常更新</li>
+<li>需要使用系统设置来更新，UOS大版本更新使用<code>apt</code>会出现依赖错误；</li>
+<li>QQ 推荐 <code>QQ纯净版</code>；微信推荐<code>UOS版</code>（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定</li>
+<li>搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法<a href="https://shurufa.sogou.com/linux">官网</a>下载个人版</li>
+</ol>
+<h2 id="1-jdk-与-maven">
+  1. jdk 与 maven
+  <a class="heading-link" href="#1-jdk-%e4%b8%8e-maven">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -version
+</span></span></code></pre></div><p>发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:</p>
+<ol>
+<li>下载相关文件: <a href="https://docs.microsoft.com/zh-cn/java/openjdk/download">https://docs.microsoft.com/zh-cn/java/openjdk/download</a></li>
+<li>解压 <code>sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/</code></li>
+<li>编辑 <code>~/.bashrc</code>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export JAVA_HOME=/usr/local/java/jdk-17.0.4+8
+</span></span><span style="display:flex;"><span>export JRE_HOME=<span style="font-weight:bold;font-style:italic">${</span>JAVA_HOME<span style="font-weight:bold;font-style:italic">}</span>
+</span></span><span style="display:flex;"><span>export CLASSPATH=.:<span style="font-weight:bold;font-style:italic">${</span>JAVA_HOME<span style="font-weight:bold;font-style:italic">}</span>/lib:<span style="font-weight:bold;font-style:italic">${</span>JRE_HOME<span style="font-weight:bold;font-style:italic">}</span>/lib
+</span></span><span style="display:flex;"><span>export PATH=<span style="font-weight:bold;font-style:italic">${</span>JAVA_HOME<span style="font-weight:bold;font-style:italic">}</span>/bin:$PATH
+</span></span></code></pre></div></li>
+<li>使之生效 <code>source ~/.bashrc</code></li>
+<li>检查 <code>java -version</code></li>
+</ol>
+<p>安装 maven 类似</p>
+<ol>
+<li>选择合适版本下载：https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz</li>
+<li>解压 <code>sudo tar xzvf apache-maven-3.8.6-bin.tar.gz -C /opt/</code></li>
+<li>同上，修改环境变量 <code>export PATH=/opt/apache-maven-3.8.6/bin:$PATH</code>  并<code>source ~/.bashrc</code>，检查 <code>mvn -v</code></li>
+</ol>
+<blockquote>
+<p>在云平台中使用的jdk版本要求1.8，应不大于 8u202；由于blade开发不规范，mvn版本应处于$(3.3, 3.6.3]$之中</p>
+</blockquote>
+<h2 id="python-和-django">
+  python 和 django
+  <a class="heading-link" href="#python-%e5%92%8c-django">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>适用范围同上，UOS根系统（deepin v23）发布前版本；</li>
+<li>deepin v23 preview 中默认 python 版本为最新的 3.10</li>
+<li>UOS、deepin 的 apt 源未提供可用python，python官方未提供deb、rpm等安装包，需自行编译</li>
+</ul>
+<ol>
+<li>准备编译所需依赖
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+</span></span></code></pre></div></li>
+<li>下载所需版本的二进制文件 <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+<li>解压 <code>tar xvf Python-3.10.6.tar.xz</code></li>
+<li>配置编译选项 <code>./configure --enable-optimizations --with-ensurepip=install --prefix=/usr/local/python3.10 --with-openssl=/usr/bin/openssl</code>
+<blockquote>
+<p>相关的配置文档在 <a href="https://docs.python.org/3/using/configure.html#configure-options">https://docs.python.org/3/using/configure.html#configure-options</a></p>
+</blockquote>
+</li>
+<li>编译 <code>make -j16</code></li>
+<li><del>安装 <code>make altinstall</code></del>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>The necessary bits to build these optional modules were not found:
+</span></span><span style="display:flex;"><span>_dbm                  _hashlib              _lzma              
+</span></span><span style="display:flex;"><span>_ssl                                                           
+</span></span><span style="display:flex;"><span>To find the necessary bits, look in setup.py in detect_modules() <span style="font-weight:bold">for</span> the module<span style="">&#39;</span>s name.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The following modules found by detect_modules() in setup.py, have been
+</span></span><span style="display:flex;"><span>built by the Makefile instead, as configured by the Setup files:
+</span></span><span style="display:flex;"><span>_abc                  pwd                   time               
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Could not build the ssl module!
+</span></span><span style="display:flex;"><span>Python requires a OpenSSL 1.1.1 or newer
+</span></span></code></pre></div></li>
+<li><em><strong>编译失败，等系统更新吧</strong></em>，准备conda</li>
+<li>下载miniconda（或者anaconda）
+<blockquote>
+<p><a href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html">https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html</a></p>
+</blockquote>
+</li>
+<li>校验sha256 <code>sha256sum ***</code></li>
+<li>安装 <code>bash Miniconda3-py39_4.12.0-Linux-x86_64.sh</code>
+<blockquote>
+<p>默认安装在 ~/miniconda3<br>
+<code>conda config --set auto_activate_base false</code><br>
+安装后会启动终端的conda环境base，用上面的命令关闭</p>
+</blockquote>
+</li>
+<li>conda常用命令
+<ol>
+<li><code>conda create --name anvenv</code> 创建一个叫做 anvenv 的环境</li>
+<li><code>conda activate anvenv</code> 激活该环境</li>
+<li><code>conda deacticate</code> 退出该环境</li>
+<li><code>conda remove --name anvenv --all</code> 删除该环境</li>
+<li><code>conda info -e</code> 检查conda现有环境</li>
+<li>可以<code>conda install ***</code> 也可以<code>pip install ***</code></li>
+<li>可以修改<code>~\.condarc</code> 换源
+<blockquote>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</a></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>conda 中 django 版本到 3.2.5；django 实际最新版本为 4.1，可用<code>pip</code>安装</li>
+</ol>
+<blockquote>
+<p>根据小程序初版源码判断，使用的django版本为 <code>2.2.2</code></p>
+</blockquote>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ss·凉月" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+     ssdreamC·凉月 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
