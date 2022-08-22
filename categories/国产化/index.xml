@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>国产化 on ssdreamC·凉月</title>
-    <link>http://localhost/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/</link>
+    <link>https://ssdreamc.github.io/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/</link>
     <description>Recent content in 国产化 on ssdreamC·凉月</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Aug 2022 23:26:12 +0800</lastBuildDate><atom:link href="http://localhost/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 23:26:12 +0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
-      <link>http://localhost/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 18 Aug 2022 23:26:12 +0800</pubDate>
       
-      <guid>http://localhost/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>适用 USO 1.0根系统（deepin v23）发布前版本
 0. 正常使用建议Link to heading原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free注释掉即可正常更新 需要使用系统设置来更新，UOS大版本更新使用apt会出现依赖错误； QQ 推荐 QQ纯净版；微信推荐UOS版（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定 搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法官网下载个人版 1. jdk 与 mavenLink to headingjava -version 发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:
 下载相关文件: https://docs.microsoft.com/zh-cn/java/openjdk/download 解压 sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/ 编辑 ~/.bashrc export JAVA_HOME=/usr/local/java/jdk-17.0.4+8 export JRE_HOME=${JAVA_HOME} export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH 使之生效 source ~/.bashrc 检查 java -version 安装 maven 类似</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
-      <link>http://localhost/posts/uso/</link>
+      <link>https://ssdreamc.github.io/posts/uso/</link>
       <pubDate>Fri, 18 Mar 2022 02:20:12 +0800</pubDate>
       
-      <guid>http://localhost/posts/uso/</guid>
+      <guid>https://ssdreamc.github.io/posts/uso/</guid>
       <description>与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
 一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery+rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区： 二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。

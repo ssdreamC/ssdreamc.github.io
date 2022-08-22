@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>deepin on ssdreamC·凉月</title>
-    <link>http://localhost/tags/deepin/</link>
+    <link>https://ssdreamc.github.io/tags/deepin/</link>
     <description>Recent content in deepin on ssdreamC·凉月</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 18 Mar 2022 02:20:12 +0800</lastBuildDate><atom:link href="http://localhost/tags/deepin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 02:20:12 +0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/deepin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
-      <link>http://localhost/posts/uso/</link>
+      <link>https://ssdreamc.github.io/posts/uso/</link>
       <pubDate>Fri, 18 Mar 2022 02:20:12 +0800</pubDate>
       
-      <guid>http://localhost/posts/uso/</guid>
+      <guid>https://ssdreamc.github.io/posts/uso/</guid>
       <description>与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
 一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery+rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区： 二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
