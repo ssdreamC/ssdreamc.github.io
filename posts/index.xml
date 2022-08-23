@@ -44,7 +44,9 @@ archetypes，原型或者说模板，hugo new 的时候使用的 assets，资产
       <guid>https://ssdreamc.github.io/posts/uso/</guid>
       <description>与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery+rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区： 二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery+rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
+二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
