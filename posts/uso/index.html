@@ -14,52 +14,52 @@
 <meta name="author" content="ssdreamC·凉月">
 <meta name="description" content="与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+一 容量空间变小： Link to heading 以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+二 无法使用Nvidia独立显卡： Link to heading 这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：Link to heading该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
+三 无法正常在torch中使用CUDA： Link to heading 该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
 直接安装CUDA，CUDA中带有显卡驱动；
 pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
 cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
 torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动Link to heading# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为">
+1、 禁用 nouveau 驱动 Link to heading # 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置"/>
 <meta name="twitter:description" content="与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+一 容量空间变小： Link to heading 以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+二 无法使用Nvidia独立显卡： Link to heading 这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：Link to heading该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
+三 无法正常在torch中使用CUDA： Link to heading 该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
 直接安装CUDA，CUDA中带有显卡驱动；
 pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
 cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
 torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动Link to heading# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为"/>
+1、 禁用 nouveau 驱动 Link to heading # 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为"/>
 
 <meta property="og:title" content="iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置" />
 <meta property="og:description" content="与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+一 容量空间变小： Link to heading 以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+二 无法使用Nvidia独立显卡： Link to heading 这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：Link to heading该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
+三 无法正常在torch中使用CUDA： Link to heading 该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
 直接安装CUDA，CUDA中带有显卡驱动；
 pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
 cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
 torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动Link to heading# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为" />
+1、 禁用 nouveau 驱动 Link to heading # 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ssdreamc.github.io/posts/uso/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-18T02:20:12+08:00" />
@@ -393,6 +393,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
     <footer class="footer">
   <section class="container">
     ©
+    
+      2021 -
     
     2022
      ssdreamC·凉月 
