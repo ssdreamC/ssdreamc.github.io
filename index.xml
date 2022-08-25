@@ -79,5 +79,21 @@ but the net is not health enough, sad…</description>
 @ApiOperation(value = &amp;#34;获取文章记录&amp;#34;, httpMethod = &amp;#34;POST&amp;#34;) @PreAuth(&amp;#34;permitAll()&amp;#34;) @PostMapping(value = &amp;#34;/query&amp;#34;, produces = &amp;#34;application/json;charset=UTF-8&amp;#34;) public R&amp;lt;PageInfoView&amp;lt;InnerHits&amp;lt;ArticleListVO&amp;gt;&amp;gt;&amp;gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&amp;lt;InnerHits&amp;lt;ArticleListVO&amp;gt;&amp;gt; pageInfoView = openNewsService.</description>
     </item>
     
+    <item>
+      <title>雨后</title>
+      <link>https://ssdreamc.github.io/posts/old/%E9%9B%A8%E5%90%8E/</link>
+      <pubDate>Tue, 10 Oct 2017 10:26:12 +0800</pubDate>
+      
+      <guid>https://ssdreamc.github.io/posts/old/%E9%9B%A8%E5%90%8E/</guid>
+      <description>秋声送雨追寒露
+星落处
+飘零木
+残风半卷天涯路
+明月春花曾几度
+念蒹葭
+唱白鹭
+陈词无人对影诉</description>
+    </item>
+    
   </channel>
 </rss>
