@@ -12,26 +12,25 @@
 
 
 <meta name="author" content="ssdreamC·凉月">
-<meta name="description" content="about some tech markedLink to heading1. spring bootLink to heading1.1. PostMapping 属性Link to headingname value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
+<meta name="description" content="about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
 @PostMapping(value = &#34;/admin&#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&#34;&#34;, HttpStatus.OK); } demoNieyan:
 @ApiOperation(value = &#34;获取文章记录&#34;, httpMethod = &#34;POST&#34;) @PreAuth(&#34;permitAll()&#34;) @PostMapping(value = &#34;/query&#34;, produces = &#34;application/json;charset=UTF-8&#34;) public R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService.">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="tech notes"/>
-<meta name="twitter:description" content="about some tech markedLink to heading1. spring bootLink to heading1.1. PostMapping 属性Link to headingname value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
+<meta name="twitter:description" content="about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
 @PostMapping(value = &#34;/admin&#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&#34;&#34;, HttpStatus.OK); } demoNieyan:
 @ApiOperation(value = &#34;获取文章记录&#34;, httpMethod = &#34;POST&#34;) @PreAuth(&#34;permitAll()&#34;) @PostMapping(value = &#34;/query&#34;, produces = &#34;application/json;charset=UTF-8&#34;) public R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService."/>
 
 <meta property="og:title" content="tech notes" />
-<meta property="og:description" content="about some tech markedLink to heading1. spring bootLink to heading1.1. PostMapping 属性Link to headingname value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
+<meta property="og:description" content="about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
 @PostMapping(value = &#34;/admin&#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&#34;&#34;, HttpStatus.OK); } demoNieyan:
 @ApiOperation(value = &#34;获取文章记录&#34;, httpMethod = &#34;POST&#34;) @PreAuth(&#34;permitAll()&#34;) @PostMapping(value = &#34;/query&#34;, produces = &#34;application/json;charset=UTF-8&#34;) public R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ssdreamc.github.io/posts/tech/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-13T03:19:12+08:00" />
 <meta property="article:modified_time" content="2021-09-13T03:19:12+08:00" />
-
 
 
 
@@ -44,7 +43,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0fa2dc75ed1b76894ac0e062b10a6c4730daa745096fa120114b290ed8a48788.css" integrity="sha256-D6Lcde0bdolKwOBisQpsRzDap0UJb6EgEUspDtikh4g=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -54,7 +53,7 @@
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css" integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -76,7 +75,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.102.3" />
+<meta name="generator" content="Hugo 0.110.0">
 
 
 
@@ -167,27 +166,27 @@
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
         <h1 id="about-some-tech-marked">
   about some tech marked
   <a class="heading-link" href="#about-some-tech-marked">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h1>
 <h2 id="1-spring-boot">
   1. spring boot
   <a class="heading-link" href="#1-spring-boot">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h2>
 <h3 id="11-postmapping-属性">
   1.1. <strong>PostMapping</strong> 属性
   <a class="heading-link" href="#11-postmapping-%e5%b1%9e%e6%80%a7">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <ul>
@@ -216,51 +215,51 @@
 </span></span></code></pre></div><h3 id="12-swagger2-注解">
   1.2. swagger2 注解
   <a class="heading-link" href="#12-swagger2-%e6%b3%a8%e8%a7%a3">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>@Api<span style="">：</span>用在请求的类上<span style="">，</span>表示对类的说明
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>@Api<span style="">：用在请求的类上，表示对类的说明</span>
 </span></span><span style="display:flex;"><span>    tags=<span style="font-style:italic">&#34;说明该类的作用，可以在UI界面上看到的注解&#34;</span>
 </span></span><span style="display:flex;"><span>    value=<span style="font-style:italic">&#34;该参数没什么意义，在UI界面上也看到，所以不需要配置&#34;</span>
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiOperation<span style="">：</span>用在请求的方法上<span style="">，</span>说明方法的用途<span style="">、</span>作用
+</span></span><span style="display:flex;"><span>@ApiOperation<span style="">：用在请求的方法上，说明方法的用途、作用</span>
 </span></span><span style="display:flex;"><span>    value=<span style="font-style:italic">&#34;说明方法的用途、作用&#34;</span>
 </span></span><span style="display:flex;"><span>    notes=<span style="font-style:italic">&#34;方法的备注说明&#34;</span>
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiImplicitParams<span style="">：</span>用在请求的方法上<span style="">，</span>表示一组参数说明
-</span></span><span style="display:flex;"><span>    @ApiImplicitParam<span style="">：</span>用在@ApiImplicitParams注解中<span style="">，</span>指定一个请求参数的各个方面
-</span></span><span style="display:flex;"><span>        name<span style="">：</span>参数名
-</span></span><span style="display:flex;"><span>        value<span style="">：</span>参数的汉字说明<span style="">、</span>解释
-</span></span><span style="display:flex;"><span>        required<span style="">：</span>参数是否必须传
-</span></span><span style="display:flex;"><span>        paramType<span style="">：</span>参数放在哪个地方
-</span></span><span style="display:flex;"><span>            <span style="">·</span> header --&gt; 请求参数的获取<span style="">：</span>@RequestHeader
-</span></span><span style="display:flex;"><span>            <span style="">·</span> query --&gt; 请求参数的获取<span style="">：</span>@RequestParam
-</span></span><span style="display:flex;"><span>            <span style="">·</span> path<span style="">（</span>用于restful接口<span style="">）</span>--&gt; 请求参数的获取<span style="">：</span>@PathVariable
-</span></span><span style="display:flex;"><span>            <span style="">·</span> body<span style="">（</span>不常用<span style="">）</span>
-</span></span><span style="display:flex;"><span>            <span style="">·</span> form<span style="">（</span>不常用<span style="">）</span>    
-</span></span><span style="display:flex;"><span>        dataType<span style="">：</span>参数类型<span style="">，</span>默认String<span style="">，</span>其它值dataType=<span style="font-style:italic">&#34;Integer&#34;</span>       
-</span></span><span style="display:flex;"><span>        defaultValue<span style="">：</span>参数的默认值
+</span></span><span style="display:flex;"><span>@ApiImplicitParams<span style="">：用在请求的方法上，表示一组参数说明</span>
+</span></span><span style="display:flex;"><span>    @ApiImplicitParam<span style="">：用在</span>@ApiImplicitParams<span style="">注解中，指定一个请求参数的各个方面</span>
+</span></span><span style="display:flex;"><span>        name<span style="">：参数名</span>
+</span></span><span style="display:flex;"><span>        value<span style="">：参数的汉字说明、解释</span>
+</span></span><span style="display:flex;"><span>        required<span style="">：参数是否必须传</span>
+</span></span><span style="display:flex;"><span>        paramType<span style="">：参数放在哪个地方</span>
+</span></span><span style="display:flex;"><span>            <span style="">·</span> header --&gt; <span style="">请求参数的获取：</span>@RequestHeader
+</span></span><span style="display:flex;"><span>            <span style="">·</span> query --&gt; <span style="">请求参数的获取：</span>@RequestParam
+</span></span><span style="display:flex;"><span>            <span style="">·</span> path<span style="">（用于</span>restful<span style="">接口）</span>--&gt; <span style="">请求参数的获取：</span>@PathVariable
+</span></span><span style="display:flex;"><span>            <span style="">·</span> body<span style="">（不常用）</span>
+</span></span><span style="display:flex;"><span>            <span style="">·</span> form<span style="">（不常用）</span>    
+</span></span><span style="display:flex;"><span>        dataType<span style="">：参数类型，默认</span>String<span style="">，其它值</span>dataType=<span style="font-style:italic">&#34;Integer&#34;</span>       
+</span></span><span style="display:flex;"><span>        defaultValue<span style="">：参数的默认值</span>
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiResponses<span style="">：</span>用在请求的方法上<span style="">，</span>表示一组响应
-</span></span><span style="display:flex;"><span>    @ApiResponse<span style="">：</span>用在@ApiResponses中<span style="">，</span>一般用于表达一个错误的响应信息
-</span></span><span style="display:flex;"><span>        code<span style="">：</span>数字<span style="">，</span>例如400
-</span></span><span style="display:flex;"><span>        message<span style="">：</span>信息<span style="">，</span>例如<span style="font-style:italic">&#34;请求参数没填好&#34;</span>
-</span></span><span style="display:flex;"><span>        response<span style="">：</span>抛出异常的类
+</span></span><span style="display:flex;"><span>@ApiResponses<span style="">：用在请求的方法上，表示一组响应</span>
+</span></span><span style="display:flex;"><span>    @ApiResponse<span style="">：用在</span>@ApiResponses<span style="">中，一般用于表达一个错误的响应信息</span>
+</span></span><span style="display:flex;"><span>        code<span style="">：数字，例如</span>400
+</span></span><span style="display:flex;"><span>        message<span style="">：信息，例如</span><span style="font-style:italic">&#34;请求参数没填好&#34;</span>
+</span></span><span style="display:flex;"><span>        response<span style="">：抛出异常的类</span>
 </span></span><span style="display:flex;"><span> 
 </span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiModel<span style="">：</span>用于响应类上<span style="">，</span>表示一个返回响应数据的信息
-</span></span><span style="display:flex;"><span>            <span style="">（</span>这种一般用在post创建的时候<span style="">，</span>使用@RequestBody这样的场景<span style="">，</span>
-</span></span><span style="display:flex;"><span>            请求参数无法使用@ApiImplicitParam注解进行描述的时候<span style="">）</span>
-</span></span><span style="display:flex;"><span>    @ApiModelProperty<span style="">：</span>用在属性上<span style="">，</span>描述响应类的属性
+</span></span><span style="display:flex;"><span>@ApiModel<span style="">：用于响应类上，表示一个返回响应数据的信息</span>
+</span></span><span style="display:flex;"><span>            <span style="">（这种一般用在</span>post<span style="">创建的时候，使用</span>@RequestBody<span style="">这样的场景，</span>
+</span></span><span style="display:flex;"><span>            <span style="">请求参数无法使用</span>@ApiImplicitParam<span style="">注解进行描述的时候）</span>
+</span></span><span style="display:flex;"><span>    @ApiModelProperty<span style="">：用在属性上，描述响应类的属性</span>
 </span></span></code></pre></div><h3 id="13-entityvodto">
   1.3. entity、VO、DTO
   <a class="heading-link" href="#13-entityvodto">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <blockquote>
@@ -301,8 +300,8 @@
 <h3 id="14-daoservicecontroller">
   1.4. DAO\Service\Controller
   <a class="heading-link" href="#14-daoservicecontroller">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <p><a href="https://blog.csdn.net/qq_22771739/article/details/82344336">原文链接</a></p>
@@ -325,6 +324,7 @@ Controler负责请求<code>转发</code>，接受页面过来的参数，传给S
         
         
         
+        
       </footer>
     </article>
 
@@ -335,11 +335,12 @@ Controler负责请求<code>转发</code>，接受页面过来的参数，传给S
 
     <footer class="footer">
   <section class="container">
+    Love xiaoguai, be loved by xiaoguai.<br>
     ©
     
       2021 -
     
-    2022
+    2023
      ssdreamC·凉月 
     ·
     
@@ -354,7 +355,16 @@ Controler负责请求<code>转发</code>，接受页面过来的参数，传给S
 
   
   
-  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
   
 
   

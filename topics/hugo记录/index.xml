@@ -15,7 +15,7 @@
       <guid>https://ssdreamc.github.io/posts/my-first-post/</guid>
       <description>这是第一篇测试文章，hogo支持markdown就很开心；
 当我准备差不多了我就搞个 gitee 的 page……
-记录Link to heading2022-08-22 10:35:13
+记录链接到标题2022-08-22 10:35:13
 先试用hogo-code的主题
 git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder 发现：
 设置可以写在主题的config.toml中，也可以写在主目录的config.toml中 图片等资源默认应该放入主目录下的static中 2022-08-22 11:01:27

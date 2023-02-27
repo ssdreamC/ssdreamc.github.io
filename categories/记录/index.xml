@@ -15,7 +15,7 @@
       <guid>https://ssdreamc.github.io/posts/my-first-post/</guid>
       <description>这是第一篇测试文章，hogo支持markdown就很开心；
 当我准备差不多了我就搞个 gitee 的 page……
-记录Link to heading2022-08-22 10:35:13
+记录链接到标题2022-08-22 10:35:13
 先试用hogo-code的主题
 git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder 发现：
 设置可以写在主题的config.toml中，也可以写在主目录的config.toml中 图片等资源默认应该放入主目录下的static中 2022-08-22 11:01:27
@@ -31,7 +31,7 @@ archetypes，原型或者说模板，hugo new 的时候使用的 assets，资产
       <pubDate>Mon, 13 Sep 2021 03:19:12 +0800</pubDate>
       
       <guid>https://ssdreamc.github.io/posts/tech/</guid>
-      <description>about some tech markedLink to heading1. spring bootLink to heading1.1. PostMapping 属性Link to headingname value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
+      <description>about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
 @PostMapping(value = &amp;#34;/admin&amp;#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&amp;lt;Object&amp;gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&amp;#34;&amp;#34;, HttpStatus.OK); } demoNieyan:
 @ApiOperation(value = &amp;#34;获取文章记录&amp;#34;, httpMethod = &amp;#34;POST&amp;#34;) @PreAuth(&amp;#34;permitAll()&amp;#34;) @PostMapping(value = &amp;#34;/query&amp;#34;, produces = &amp;#34;application/json;charset=UTF-8&amp;#34;) public R&amp;lt;PageInfoView&amp;lt;InnerHits&amp;lt;ArticleListVO&amp;gt;&amp;gt;&amp;gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&amp;lt;InnerHits&amp;lt;ArticleListVO&amp;gt;&amp;gt; pageInfoView = openNewsService.</description>
     </item>

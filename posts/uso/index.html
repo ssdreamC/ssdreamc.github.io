@@ -14,57 +14,56 @@
 <meta name="author" content="ssdreamC·凉月">
 <meta name="description" content="与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+一 容量空间变小：链接到标题以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+二 无法使用Nvidia独立显卡：链接到标题这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：Link to heading该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
+三 无法正常在torch中使用CUDA：链接到标题该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
 直接安装CUDA，CUDA中带有显卡驱动；
 pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
 cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
 torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动Link to heading# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为">
+1、 禁用 nouveau 驱动链接到标题# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置"/>
 <meta name="twitter:description" content="与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+一 容量空间变小：链接到标题以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+二 无法使用Nvidia独立显卡：链接到标题这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：Link to heading该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
+三 无法正常在torch中使用CUDA：链接到标题该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
 直接安装CUDA，CUDA中带有显卡驱动；
 pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
 cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
 torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动Link to heading# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为"/>
+1、 禁用 nouveau 驱动链接到标题# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为"/>
 
 <meta property="og:title" content="iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置" />
 <meta property="og:description" content="与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
 需要注意的地方可能有三点
-一 容量空间变小：Link to heading以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
+一 容量空间变小：链接到标题以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery&#43;rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
 所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：Link to heading这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
+二 无法使用Nvidia独立显卡：链接到标题这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
 方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
 有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
 # 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：Link to heading该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
+三 无法正常在torch中使用CUDA：链接到标题该解决方案略复杂一点点，因为现在Windows下的torch&#43;cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
 直接安装CUDA，CUDA中带有显卡驱动；
 pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
 cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
 torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动Link to heading# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为" />
+1、 禁用 nouveau 驱动链接到标题# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&quot;splash quiet后加上一句改为" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ssdreamc.github.io/posts/uso/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-18T02:20:12+08:00" />
 <meta property="article:modified_time" content="2022-03-18T02:20:12+08:00" />
-
 
 
 
@@ -77,7 +76,7 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.0fa2dc75ed1b76894ac0e062b10a6c4730daa745096fa120114b290ed8a48788.css" integrity="sha256-D6Lcde0bdolKwOBisQpsRzDap0UJb6EgEUspDtikh4g=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -87,7 +86,7 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css" integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -109,7 +108,7 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 
 
 
-<meta name="generator" content="Hugo 0.102.3" />
+<meta name="generator" content="Hugo 0.110.0">
 
 
 
@@ -208,15 +207,15 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
         <p>与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。</p>
 <p>需要注意的地方可能有三点</p>
 <h2 id="一-容量空间变小">
   一 容量空间变小：
   <a class="heading-link" href="#%e4%b8%80-%e5%ae%b9%e9%87%8f%e7%a9%ba%e9%97%b4%e5%8f%98%e5%b0%8f">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h2>
 <p>以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery+rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。</p>
@@ -226,8 +225,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 <h2 id="二-无法使用nvidia独立显卡">
   二 无法使用Nvidia独立显卡：
   <a class="heading-link" href="#%e4%ba%8c-%e6%97%a0%e6%b3%95%e4%bd%bf%e7%94%a8nvidia%e7%8b%ac%e7%ab%8b%e6%98%be%e5%8d%a1">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h2>
 <p>这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。</p>
@@ -249,8 +248,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 <h3 id="三-无法正常在torch中使用cuda">
   三 无法正常在torch中使用CUDA：
   <a class="heading-link" href="#%e4%b8%89-%e6%97%a0%e6%b3%95%e6%ad%a3%e5%b8%b8%e5%9c%a8torch%e4%b8%ad%e4%bd%bf%e7%94%a8cuda">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <p>该解决方案略复杂一点点，因为现在Windows下的torch+cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：</p>
@@ -263,8 +262,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 <h3 id="1-禁用-nouveau-驱动">
   1、 禁用 nouveau 驱动
   <a class="heading-link" href="#1-%e7%a6%81%e7%94%a8-nouveau-%e9%a9%b1%e5%8a%a8">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="font-style:italic"># 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以</span>
@@ -278,16 +277,16 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 <h3 id="2-更新-grub-配置">
   2、 更新 grub 配置
   <a class="heading-link" href="#2-%e6%9b%b4%e6%96%b0-grub-%e9%85%8d%e7%bd%ae">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo update-grub
 </span></span></code></pre></div><h3 id="3-重启后进入系统运行级别-3">
   3、 重启后进入系统运行级别 3
   <a class="heading-link" href="#3-%e9%87%8d%e5%90%af%e5%90%8e%e8%bf%9b%e5%85%a5%e7%b3%bb%e7%bb%9f%e8%bf%90%e8%a1%8c%e7%ba%a7%e5%88%ab-3">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <p>为了保险，我是不登陆图形界面 CTRL+ALT+F2 进入tt2后操作的</p>
@@ -295,8 +294,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 </span></span></code></pre></div><h3 id="4-卸载可能存在的nvidia驱动">
   4、 卸载可能存在的nvidia驱动
   <a class="heading-link" href="#4-%e5%8d%b8%e8%bd%bd%e5%8f%af%e8%83%bd%e5%ad%98%e5%9c%a8%e7%9a%84nvidia%e9%a9%b1%e5%8a%a8">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo apt purge nvidia*
@@ -304,8 +303,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 </span></span></code></pre></div><h3 id="5-安装cuda1131">
   5、 安装CUDA（11.3.1）
   <a class="heading-link" href="#5-%e5%ae%89%e8%a3%85cuda1131">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/11.3.1/local_installers/cuda-repo-debian10-11-3-local_11.3.1-465.19.01-1_amd64.deb
@@ -335,8 +334,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 <h3 id="6-torch">
   6、 torch
   <a class="heading-link" href="#6-torch">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="font-style:italic"># 安装失败的原因就是缺点依赖项，先装上就好了</span>
@@ -347,8 +346,8 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 </span></span></code></pre></div><h3 id="7-验证-torch-能不能用-cuda-和-cudnn">
   7、 验证 torch 能不能用 cuda 和 cudnn
   <a class="heading-link" href="#7-%e9%aa%8c%e8%af%81-torch-%e8%83%bd%e4%b8%8d%e8%83%bd%e7%94%a8-cuda-%e5%92%8c-cudnn">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
   </a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold">from</span> <span style="font-weight:bold">torch</span> <span style="font-weight:bold">import</span> tensor, cuda
@@ -382,6 +381,7 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
         
         
         
+        
       </footer>
     </article>
 
@@ -392,11 +392,12 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 
     <footer class="footer">
   <section class="container">
+    Love xiaoguai, be loved by xiaoguai.<br>
     ©
     
       2021 -
     
-    2022
+    2023
      ssdreamC·凉月 
     ·
     
@@ -411,7 +412,16 @@ torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
 
   
   
-  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
   
 
   
