@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>跑步 on ssdreamC·凉月</title>
-    <link>https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/</link>
-    <description>Recent content in 跑步 on ssdreamC·凉月</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 07 Apr 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>傲气中华</title>
-      <link>https://ssdreamc.github.io/posts/old/2010/%E5%82%B2%E6%B0%94%E4%B8%AD%E5%8D%8E/</link>
-      <pubDate>Wed, 07 Apr 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://ssdreamc.github.io/posts/old/2010/%E5%82%B2%E6%B0%94%E4%B8%AD%E5%8D%8E/</guid>
-      <description>言傲气中华者，华英雄也。承师命，背妻子，修中华傲决，与同门师叔灜人无敌战于夷之自由女神像，以傲气中华式胜之。昨观榜，下第，心中积郁，观其战，气血俱动，恨不能拔青龙而舞。
-然吾乃一文弱书生，外功不可行，内气未可导，实非练武之才也，实为惭愧。然男儿立于世间，岂可无一善乎？故思以文代武，以笔代剑矣，其傲然之气吾可得乎？
-昔东方有龙，名曰伏羲，身化五气，一曰傲，二曰正，三曰灵，四曰文，五曰武。五气可通道，故曰先天之气，后女娲造人，生后天之气，天地之真气全矣。然物分阴阳，气通太极，故世间生纷繁浊气以正混沌。
-夫昔为王侯今为卿相，朝为大夫夕为士者，浊气相逼也，圣人可浩气奋发，悟天地正也。区区不才，晦自由而舞，朔逍遥而歌，实误本命也，喟然叹之，幸觉为时未晚，犹有可补救也。虽非笔落惊风雨之大才，亦自觉可文成慰师友也，愿从此发奋，以清气傲气正自身也。
-思念至此，觉周身气盈，观日出与青龙之地，弘光万丈，彩霞抚云，神游苍穹，飘然若有得矣。
-再观傲气中华四字，实乃吾辈之应发奋也。</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>跑步 - topic - </title>
+        <link>https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/</link>
+        <description>跑步 - topic - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Apr 2010 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/" rel="self" type="application/rss+xml" /><item>
+    <title>傲气中华</title>
+    <link>https://ssdreamc.github.io/posts/old/2010/%E5%82%B2%E6%B0%94%E4%B8%AD%E5%8D%8E/</link>
+    <pubDate>Wed, 07 Apr 2010 00:00:00 &#43;0000</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/old/2010/%E5%82%B2%E6%B0%94%E4%B8%AD%E5%8D%8E/</guid>
+    <description><![CDATA[言傲气中华者，华英雄也。承师命，背妻子，修中华傲决，与同门师叔灜人无敌战于夷之自由女神像，以傲气中华式胜之。昨观榜，下第，心中积郁，观其战，]]></description>
+</item>
+</channel>
 </rss>

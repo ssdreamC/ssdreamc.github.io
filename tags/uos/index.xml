@@ -1,45 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>uos on ssdreamC·凉月</title>
-    <link>https://ssdreamc.github.io/tags/uos/</link>
-    <description>Recent content in uos on ssdreamC·凉月</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Aug 2022 23:26:12 +0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/uos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
-      <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Thu, 18 Aug 2022 23:26:12 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-      <description>适用 USO 1.0根系统（deepin v23）发布前版本
-0. 正常使用建议链接到标题原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free注释掉即可正常更新 需要使用系统设置来更新，UOS大版本更新使用apt会出现依赖错误； QQ 推荐 QQ纯净版；微信推荐UOS版（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定 搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法官网下载个人版 1. jdk 与 maven链接到标题java -version 发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:
-下载相关文件: https://docs.microsoft.com/zh-cn/java/openjdk/download 解压 sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/ 编辑 ~/.bashrc export JAVA_HOME=/usr/local/java/jdk-17.0.4+8 export JRE_HOME=${JAVA_HOME} export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH 使之生效 source ~/.bashrc 检查 java -version 安装 maven 类似
-选择合适版本下载：https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz 解压 sudo tar xzvf apache-maven-3.</description>
-    </item>
-    
-    <item>
-      <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
-      <link>https://ssdreamc.github.io/posts/uso/</link>
-      <pubDate>Fri, 18 Mar 2022 02:20:12 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/posts/uso/</guid>
-      <description>与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。
-需要注意的地方可能有三点
-一 容量空间变小：链接到标题以128G硬盘为例，按照默认的安装方法，会分出 /(roota) 以及 rootb 两个大小为15G的根分区以及一个12G的/recovery分区，其中roota是日常使用分区，更新系统时，自动把roota复制一份到rootb上，作为备份，这样如果更新以后启动不了就能回退了，而/recovery+rootb就占用了27G空间，而这27G空间一般情况下是白白浪费的。
-所以安装系统时选择推荐手动安装分区，不分配b分区以及recovery分区：
-二 无法使用Nvidia独立显卡：链接到标题这个情况是具有nVidia独立显卡的电脑外接显示器时发现的，UOS/deepin系统对硬件的兼容性还不太完善，如果显示接口（例如HDMI）在独立显卡上，可能由于无法使用独立显卡而导致无法输出显示。
-方案一，使用应用商店中提供的切换工具显卡驱动管理器进行切换。 方案二，如果管理器无效，可以尝试该方案： 安装nvidia驱动
-有坑，配置不好会直接导致 torch与CUDA不兼容 如果不要CUDA，可以直接安装 为了保险也可以按照安装CUDA的步骤来，在5. 安装cuda时再改为直接安装显卡驱动
-# 安装英伟达显卡驱动和管理工具 sudo apt install nvidia-driver nvidia-smi nvidia-settings 安装一个显卡切换插件 安装插件后，注销重新登录或者直接重启都行，会在底部电源那一栏出现 Intel 的标志，点击它就可以切换了
-三 无法正常在torch中使用CUDA：链接到标题该解决方案略复杂一点点，因为现在Windows下的torch+cuda配置要比Linux下更为方便了，再就是UOS/deepin系统默认的包少一些，需要解决依赖：
-直接安装CUDA，CUDA中带有显卡驱动；
-pip 和 venv用 apt install python3-pip python3-venv 否则缺失依赖项
-cudnn自带的sample也有依赖项缺失：sudo apt-get install libfreeimage3 libfreeimage-dev
-torch的依赖项：sudo apt install libjpeg-dev zlib1g-dev
-1、 禁用 nouveau 驱动链接到标题# 我实际上使用的是nano，不过uos自带的deepin-editor也可以，任意编辑器都可以 sudo deepin-editor /etc/default/grub 在GURB_CMDLINE_LINUX_DEFAULT=&amp;quot;splash quiet后加上一句改为</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>uos - 标签 - </title>
+        <link>https://ssdreamc.github.io/tags/uos/</link>
+        <description>uos - 标签 - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/uos/" rel="self" type="application/rss+xml" /><item>
+    <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
+    <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[适用 USO 1.0根系统（deepin v23）发布前版本 0. 正常使用建议 原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中de]]></description>
+</item>
+<item>
+    <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
+    <link>https://ssdreamc.github.io/posts/uso/</link>
+    <pubDate>Fri, 18 Mar 2022 02:20:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/uso/</guid>
+    <description><![CDATA[与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。 需要注意的地方可能有三点 一 容量空间变小： 以128G硬盘为例，按照]]></description>
+</item>
+</channel>
 </rss>

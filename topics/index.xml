@@ -1,74 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Topics on ssdreamC·凉月</title>
-    <link>https://ssdreamc.github.io/topics/</link>
-    <description>Recent content in Topics on ssdreamC·凉月</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 19 Aug 2022 11:14:12 +0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hugo记录</title>
-      <link>https://ssdreamc.github.io/topics/hugo%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Fri, 19 Aug 2022 11:14:12 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/hugo%E8%AE%B0%E5%BD%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>国产化</title>
-      <link>https://ssdreamc.github.io/topics/%E5%9B%BD%E4%BA%A7%E5%8C%96/</link>
-      <pubDate>Thu, 18 Aug 2022 23:26:12 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/%E5%9B%BD%E4%BA%A7%E5%8C%96/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub pages</title>
-      <link>https://ssdreamc.github.io/topics/github-pages/</link>
-      <pubDate>Mon, 31 Jan 2022 16:00:00 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/github-pages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tech 记录</title>
-      <link>https://ssdreamc.github.io/topics/tech-%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Mon, 13 Sep 2021 03:19:12 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/tech-%E8%AE%B0%E5%BD%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>10十年</title>
-      <link>https://ssdreamc.github.io/topics/10%E5%8D%81%E5%B9%B4/</link>
-      <pubDate>Thu, 25 Jun 2020 07:28:00 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/10%E5%8D%81%E5%B9%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>我喜欢</title>
-      <link>https://ssdreamc.github.io/topics/%E6%88%91%E5%96%9C%E6%AC%A2/</link>
-      <pubDate>Sun, 03 Oct 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/%E6%88%91%E5%96%9C%E6%AC%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>跑步</title>
-      <link>https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/</link>
-      <pubDate>Wed, 07 Apr 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Topics - topic - </title>
+        <link>https://ssdreamc.github.io/topics/</link>
+        <description>Topics - topic - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 19 Aug 2022 11:14:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo记录</title>
+    <link>https://ssdreamc.github.io/topics/hugo%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Fri, 19 Aug 2022 11:14:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/hugo%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>国产化</title>
+    <link>https://ssdreamc.github.io/topics/%E5%9B%BD%E4%BA%A7%E5%8C%96/</link>
+    <pubDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/%E5%9B%BD%E4%BA%A7%E5%8C%96/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>GitHub pages</title>
+    <link>https://ssdreamc.github.io/topics/github-pages/</link>
+    <pubDate>Mon, 31 Jan 2022 16:00:00 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/github-pages/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>tech 记录</title>
+    <link>https://ssdreamc.github.io/topics/tech-%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Mon, 13 Sep 2021 03:19:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/tech-%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>10十年</title>
+    <link>https://ssdreamc.github.io/topics/10%E5%8D%81%E5%B9%B4/</link>
+    <pubDate>Thu, 25 Jun 2020 07:28:00 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/10%E5%8D%81%E5%B9%B4/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>我喜欢</title>
+    <link>https://ssdreamc.github.io/topics/%E6%88%91%E5%96%9C%E6%AC%A2/</link>
+    <pubDate>Sun, 03 Oct 2010 00:00:00 &#43;0000</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/%E6%88%91%E5%96%9C%E6%AC%A2/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>跑步</title>
+    <link>https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/</link>
+    <pubDate>Wed, 07 Apr 2010 00:00:00 &#43;0000</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/topics/%E8%B7%91%E6%AD%A5/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

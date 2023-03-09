@@ -1,202 +1,96 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <title>
-  tech notes · ssdreamC·凉月
-</title>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="ssdreamC·凉月">
-<meta name="description" content="about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
-@PostMapping(value = &#34;/admin&#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&#34;&#34;, HttpStatus.OK); } demoNieyan:
-@ApiOperation(value = &#34;获取文章记录&#34;, httpMethod = &#34;POST&#34;) @PreAuth(&#34;permitAll()&#34;) @PostMapping(value = &#34;/query&#34;, produces = &#34;application/json;charset=UTF-8&#34;) public R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService.">
-<meta name="keywords" content="blog,developer,personal">
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="tech notes"/>
-<meta name="twitter:description" content="about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
-@PostMapping(value = &#34;/admin&#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&#34;&#34;, HttpStatus.OK); } demoNieyan:
-@ApiOperation(value = &#34;获取文章记录&#34;, httpMethod = &#34;POST&#34;) @PreAuth(&#34;permitAll()&#34;) @PostMapping(value = &#34;/query&#34;, produces = &#34;application/json;charset=UTF-8&#34;) public R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService."/>
-
-<meta property="og:title" content="tech notes" />
-<meta property="og:description" content="about some tech marked链接到标题1. spring boot链接到标题1.1. PostMapping 属性链接到标题name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的header值 consumes 请求提交内容类型，MediaType方式，如 application/json、application/x-www-urlencode、multipart/form-data等 produces 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json demo:
-@PostMapping(value = &#34;/admin&#34;, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE) public ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) throws URISyntaxException { // TODO return new ResponseEntity(&#34;&#34;, HttpStatus.OK); } demoNieyan:
-@ApiOperation(value = &#34;获取文章记录&#34;, httpMethod = &#34;POST&#34;) @PreAuth(&#34;permitAll()&#34;) @PostMapping(value = &#34;/query&#34;, produces = &#34;application/json;charset=UTF-8&#34;) public R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) { PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService." />
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>tech notes - </title><meta name="Description" content="你好，我叫凉月"><meta property="og:title" content="tech notes" />
+<meta property="og:description" content="about some tech marked 1. spring boot 1.1. PostMapping 属性 name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的head" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ssdreamc.github.io/posts/tech/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-13T03:19:12+08:00" />
-<meta property="article:modified_time" content="2021-09-13T03:19:12+08:00" />
+<meta property="article:modified_time" content="2021-09-13T03:19:12+08:00" /><meta property="og:site_name" content="ssdreamC·凉月" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="tech notes"/>
+<meta name="twitter:description" content="about some tech marked 1. spring boot 1.1. PostMapping 属性 name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的head"/>
+<meta name="application-name" content="ssdreamC·凉月">
+<meta name="apple-mobile-web-app-title" content="ssdreamC·凉月"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ssdreamc.github.io/posts/tech/" /><link rel="prev" href="https://ssdreamc.github.io/posts/old/2020/%E8%B0%81/" /><link rel="next" href="https://ssdreamc.github.io/posts/readme/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "tech notes",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ssdreamc.github.io\/posts\/tech\/"
+        },"genre": "posts","keywords": "记录, tech","wordcount":  1947 ,
+        "url": "https:\/\/ssdreamc.github.io\/posts\/tech\/","datePublished": "2021-09-13T03:19:12+08:00","dateModified": "2021-09-13T03:19:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": "ssdreamC"},"author": {
+                "@type": "Person",
+                "name": "ssdreamC"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-
-
-
-<link rel="canonical" href="https://ssdreamc.github.io/posts/tech/">
-
-
-<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.0fa2dc75ed1b76894ac0e062b10a6c4730daa745096fa120114b290ed8a48788.css" integrity="sha256-D6Lcde0bdolKwOBisQpsRzDap0UJb6EgEUspDtikh4g=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css" integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin="anonymous" media="screen" />
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-<meta name="generator" content="Hugo 0.110.0">
-
-
-
-
-
-  </head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="/">
-      ssdreamC·凉月
-    </a>
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">列表</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/categories/">分类</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/tags/">标签</a>
-            </li>
-          
-        
-        
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">ssdreamC·凉月</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="内容"> 内容 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">ssdreamC·凉月</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="内容">内容</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">tech notes</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%AE%B0%E5%BD%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>记录</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-09-13">2021-09-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1947 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-spring-boot">1. spring boot</a>
+      <ul>
+        <li><a href="#11-postmapping-属性">1.1. <strong>PostMapping</strong> 属性</a></li>
+        <li><a href="#12-swagger2-注解">1.2. swagger2 注解</a></li>
+        <li><a href="#13-entityvodto">1.3. entity、VO、DTO</a></li>
+        <li><a href="#14-daoservicecontroller">1.4. DAO\Service\Controller</a></li>
       </ul>
-    
-  </section>
-</nav>
-
-
-    <div class="content">
-      
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://ssdreamc.github.io/posts/tech/">
-              tech notes
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2021-09-13T03:19:12&#43;08:00">
-                September 13, 2021
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              阅读时间：2 分钟
-            </span>
-          </div>
-          
-          <div class="categories">
-  <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/%E8%AE%B0%E5%BD%95/">记录</a></div>
-
-          <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
-    <span class="tag">
-      <a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/tech/">tech</a>
-    </span></div>
-
-        </div>
-      </header>
-
-      <div class="post-content">
-        
-        <h1 id="about-some-tech-marked">
-  about some tech marked
-  <a class="heading-link" href="#about-some-tech-marked">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h1>
-<h2 id="1-spring-boot">
-  1. spring boot
-  <a class="heading-link" href="#1-spring-boot">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<h3 id="11-postmapping-属性">
-  1.1. <strong>PostMapping</strong> 属性
-  <a class="heading-link" href="#11-postmapping-%e5%b1%9e%e6%80%a7">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h3>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="about-some-tech-marked">about some tech marked</h1>
+<h2 id="1-spring-boot">1. spring boot</h2>
+<h3 id="11-postmapping-属性">1.1. <strong>PostMapping</strong> 属性</h3>
 <ul>
 <li><code>name</code></li>
 <li><code>value</code> 请求路由地址</li>
@@ -207,69 +101,57 @@
 <li><code>produces</code> 请求返回的数据类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回，如application/json</li>
 </ul>
 <p>demo:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>@PostMapping(value = <span style="font-style:italic">&#34;/admin&#34;</span>, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">public</span> ResponseEntity&lt;Object&gt; postPCWithJson(@RequestBody Object body,HttpServletRequest request, HttpServletResponse response, HttpMethod httpMethod) <span style="font-weight:bold">throws</span> URISyntaxException {
-</span></span><span style="display:flex;"><span>    <span style="font-style:italic">// TODO
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-weight:bold">return</span> <span style="font-weight:bold">new</span> ResponseEntity(<span style="font-style:italic">&#34;&#34;</span>, HttpStatus.OK);
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@PostMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;/admin&#34;</span><span class="o">,</span> <span class="n">consumes</span> <span class="o">=</span> <span class="n">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON_VALUE</span><span class="o">,</span> <span class="n">produces</span> <span class="o">=</span> <span class="n">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON_VALUE</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">ResponseEntity</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="nf">postPCWithJson</span><span class="o">(</span><span class="nd">@RequestBody</span> <span class="n">Object</span> <span class="n">body</span><span class="o">,</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">,</span> <span class="n">HttpMethod</span> <span class="n">httpMethod</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">URISyntaxException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// TODO
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="k">new</span> <span class="n">ResponseEntity</span><span class="o">(</span><span class="s">&#34;&#34;</span><span class="o">,</span> <span class="n">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><p>demoNieyan:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>@ApiOperation(value = <span style="font-style:italic">&#34;获取文章记录&#34;</span>, httpMethod = <span style="font-style:italic">&#34;POST&#34;</span>)
-</span></span><span style="display:flex;"><span>@PreAuth(<span style="font-style:italic">&#34;permitAll()&#34;</span>)
-</span></span><span style="display:flex;"><span>@PostMapping(value = <span style="font-style:italic">&#34;/query&#34;</span>, produces = <span style="font-style:italic">&#34;application/json;charset=UTF-8&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">public</span> R&lt;PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt;&gt; queryNews(@RequestBody QueryArticleParam queryArticleParam, Query query) {
-</span></span><span style="display:flex;"><span>    PageInfoView&lt;InnerHits&lt;ArticleListVO&gt;&gt; pageInfoView = openNewsService.queryOpenNewsInnerHits(queryArticleParam, query);
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> R.data(pageInfoView);
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="12-swagger2-注解">
-  1.2. swagger2 注解
-  <a class="heading-link" href="#12-swagger2-%e6%b3%a8%e8%a7%a3">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>@Api<span style="">：用在请求的类上，表示对类的说明</span>
-</span></span><span style="display:flex;"><span>    tags=<span style="font-style:italic">&#34;说明该类的作用，可以在UI界面上看到的注解&#34;</span>
-</span></span><span style="display:flex;"><span>    value=<span style="font-style:italic">&#34;该参数没什么意义，在UI界面上也看到，所以不需要配置&#34;</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiOperation<span style="">：用在请求的方法上，说明方法的用途、作用</span>
-</span></span><span style="display:flex;"><span>    value=<span style="font-style:italic">&#34;说明方法的用途、作用&#34;</span>
-</span></span><span style="display:flex;"><span>    notes=<span style="font-style:italic">&#34;方法的备注说明&#34;</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiImplicitParams<span style="">：用在请求的方法上，表示一组参数说明</span>
-</span></span><span style="display:flex;"><span>    @ApiImplicitParam<span style="">：用在</span>@ApiImplicitParams<span style="">注解中，指定一个请求参数的各个方面</span>
-</span></span><span style="display:flex;"><span>        name<span style="">：参数名</span>
-</span></span><span style="display:flex;"><span>        value<span style="">：参数的汉字说明、解释</span>
-</span></span><span style="display:flex;"><span>        required<span style="">：参数是否必须传</span>
-</span></span><span style="display:flex;"><span>        paramType<span style="">：参数放在哪个地方</span>
-</span></span><span style="display:flex;"><span>            <span style="">·</span> header --&gt; <span style="">请求参数的获取：</span>@RequestHeader
-</span></span><span style="display:flex;"><span>            <span style="">·</span> query --&gt; <span style="">请求参数的获取：</span>@RequestParam
-</span></span><span style="display:flex;"><span>            <span style="">·</span> path<span style="">（用于</span>restful<span style="">接口）</span>--&gt; <span style="">请求参数的获取：</span>@PathVariable
-</span></span><span style="display:flex;"><span>            <span style="">·</span> body<span style="">（不常用）</span>
-</span></span><span style="display:flex;"><span>            <span style="">·</span> form<span style="">（不常用）</span>    
-</span></span><span style="display:flex;"><span>        dataType<span style="">：参数类型，默认</span>String<span style="">，其它值</span>dataType=<span style="font-style:italic">&#34;Integer&#34;</span>       
-</span></span><span style="display:flex;"><span>        defaultValue<span style="">：参数的默认值</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiResponses<span style="">：用在请求的方法上，表示一组响应</span>
-</span></span><span style="display:flex;"><span>    @ApiResponse<span style="">：用在</span>@ApiResponses<span style="">中，一般用于表达一个错误的响应信息</span>
-</span></span><span style="display:flex;"><span>        code<span style="">：数字，例如</span>400
-</span></span><span style="display:flex;"><span>        message<span style="">：信息，例如</span><span style="font-style:italic">&#34;请求参数没填好&#34;</span>
-</span></span><span style="display:flex;"><span>        response<span style="">：抛出异常的类</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>@ApiModel<span style="">：用于响应类上，表示一个返回响应数据的信息</span>
-</span></span><span style="display:flex;"><span>            <span style="">（这种一般用在</span>post<span style="">创建的时候，使用</span>@RequestBody<span style="">这样的场景，</span>
-</span></span><span style="display:flex;"><span>            <span style="">请求参数无法使用</span>@ApiImplicitParam<span style="">注解进行描述的时候）</span>
-</span></span><span style="display:flex;"><span>    @ApiModelProperty<span style="">：用在属性上，描述响应类的属性</span>
-</span></span></code></pre></div><h3 id="13-entityvodto">
-  1.3. entity、VO、DTO
-  <a class="heading-link" href="#13-entityvodto">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@ApiOperation</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;获取文章记录&#34;</span><span class="o">,</span> <span class="n">httpMethod</span> <span class="o">=</span> <span class="s">&#34;POST&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@PreAuth</span><span class="o">(</span><span class="s">&#34;permitAll()&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@PostMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;/query&#34;</span><span class="o">,</span> <span class="n">produces</span> <span class="o">=</span> <span class="s">&#34;application/json;charset=UTF-8&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">R</span><span class="o">&lt;</span><span class="n">PageInfoView</span><span class="o">&lt;</span><span class="n">InnerHits</span><span class="o">&lt;</span><span class="n">ArticleListVO</span><span class="o">&gt;&gt;&gt;</span> <span class="nf">queryNews</span><span class="o">(</span><span class="nd">@RequestBody</span> <span class="n">QueryArticleParam</span> <span class="n">queryArticleParam</span><span class="o">,</span> <span class="n">Query</span> <span class="n">query</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PageInfoView</span><span class="o">&lt;</span><span class="n">InnerHits</span><span class="o">&lt;</span><span class="n">ArticleListVO</span><span class="o">&gt;&gt;</span> <span class="n">pageInfoView</span> <span class="o">=</span> <span class="n">openNewsService</span><span class="o">.</span><span class="na">queryOpenNewsInnerHits</span><span class="o">(</span><span class="n">queryArticleParam</span><span class="o">,</span> <span class="n">query</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">R</span><span class="o">.</span><span class="na">data</span><span class="o">(</span><span class="n">pageInfoView</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h3 id="12-swagger2-注解">1.2. swagger2 注解</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Api</span><span class="err">：用在请求的类上，表示对类的说明</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tags</span><span class="o">=</span><span class="s">&#34;说明该类的作用，可以在UI界面上看到的注解&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">value</span><span class="o">=</span><span class="s">&#34;该参数没什么意义，在UI界面上也看到，所以不需要配置&#34;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nd">@ApiOperation</span><span class="err">：用在请求的方法上，说明方法的用途、作用</span>
+</span></span><span class="line"><span class="cl">    <span class="n">value</span><span class="o">=</span><span class="s">&#34;说明方法的用途、作用&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">notes</span><span class="o">=</span><span class="s">&#34;方法的备注说明&#34;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nd">@ApiImplicitParams</span><span class="err">：用在请求的方法上，表示一组参数说明</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@ApiImplicitParam</span><span class="err">：用在</span><span class="nd">@ApiImplicitParams</span><span class="err">注解中，指定一个请求参数的各个方面</span>
+</span></span><span class="line"><span class="cl">        <span class="n">name</span><span class="err">：参数名</span>
+</span></span><span class="line"><span class="cl">        <span class="n">value</span><span class="err">：参数的汉字说明、解释</span>
+</span></span><span class="line"><span class="cl">        <span class="n">required</span><span class="err">：参数是否必须传</span>
+</span></span><span class="line"><span class="cl">        <span class="n">paramType</span><span class="err">：参数放在哪个地方</span>
+</span></span><span class="line"><span class="cl">            <span class="err">·</span> <span class="n">header</span> <span class="o">--&gt;</span> <span class="err">请求参数的获取：</span><span class="nd">@RequestHeader</span>
+</span></span><span class="line"><span class="cl">            <span class="err">·</span> <span class="n">query</span> <span class="o">--&gt;</span> <span class="err">请求参数的获取：</span><span class="nd">@RequestParam</span>
+</span></span><span class="line"><span class="cl">            <span class="err">·</span> <span class="n">path</span><span class="err">（用于</span><span class="n">restful</span><span class="err">接口）</span><span class="o">--&gt;</span> <span class="err">请求参数的获取：</span><span class="nd">@PathVariable</span>
+</span></span><span class="line"><span class="cl">            <span class="err">·</span> <span class="n">body</span><span class="err">（不常用）</span>
+</span></span><span class="line"><span class="cl">            <span class="err">·</span> <span class="n">form</span><span class="err">（不常用）</span>    
+</span></span><span class="line"><span class="cl">        <span class="n">dataType</span><span class="err">：参数类型，默认</span><span class="n">String</span><span class="err">，其它值</span><span class="n">dataType</span><span class="o">=</span><span class="s">&#34;Integer&#34;</span>       
+</span></span><span class="line"><span class="cl">        <span class="n">defaultValue</span><span class="err">：参数的默认值</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nd">@ApiResponses</span><span class="err">：用在请求的方法上，表示一组响应</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@ApiResponse</span><span class="err">：用在</span><span class="nd">@ApiResponses</span><span class="err">中，一般用于表达一个错误的响应信息</span>
+</span></span><span class="line"><span class="cl">        <span class="n">code</span><span class="err">：数字，例如</span><span class="mi">400</span>
+</span></span><span class="line"><span class="cl">        <span class="n">message</span><span class="err">：信息，例如</span><span class="s">&#34;请求参数没填好&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="err">：抛出异常的类</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nd">@ApiModel</span><span class="err">：用于响应类上，表示一个返回响应数据的信息</span>
+</span></span><span class="line"><span class="cl">            <span class="err">（这种一般用在</span><span class="n">post</span><span class="err">创建的时候，使用</span><span class="nd">@RequestBody</span><span class="err">这样的场景，</span>
+</span></span><span class="line"><span class="cl">            <span class="err">请求参数无法使用</span><span class="nd">@ApiImplicitParam</span><span class="err">注解进行描述的时候）</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@ApiModelProperty</span><span class="err">：用在属性上，描述响应类的属性</span>
+</span></span></code></pre></div><h3 id="13-entityvodto">1.3. entity、VO、DTO</h3>
 <blockquote>
 <ol>
 <li>
@@ -287,14 +169,14 @@
 <p>你的<code>html页面</code>上有三个字段，<code>name</code>，<code>pass</code>，<code>age</code></p>
 <p>你的<code>数据库表</code>里，有两个字段，<code>name</code>，<code>pass</code> ， 注意没有 <code>age</code>。</p>
 <p>而你的 <code>vo</code> 里，就应该有下面三个成员变量 ，因为对应 html 页面上三个字段 。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JAVA" data-lang="JAVA"><span style="display:flex;"><span><span style="font-style:italic">// vo
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">private</span> string name<span style="">；</span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">private</span> string pass; 
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">private</span> string age;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-JAVA" data-lang="JAVA"><span class="line"><span class="cl"><span class="c1">// vo
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">private</span> <span class="n">string</span> <span class="n">name</span><span class="err">；</span>
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="n">string</span> <span class="n">pass</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="n">string</span> <span class="n">age</span><span class="o">;</span>
 </span></span></code></pre></div><p>这个时候，你的 entity 里，就应该有两个成员变量 ，因为对应数据库表中的 2 个字段 。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-style:italic">// entity
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">private</span> string name<span style="">；</span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">private</span> string pass;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// entity
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">private</span> <span class="n">string</span> <span class="n">name</span><span class="err">；</span>
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="n">string</span> <span class="n">pass</span><span class="o">;</span>
 </span></span></code></pre></div><p>到了这里，好了，业务经理让你做这样一个<strong>业务</strong><code>年龄大于 20 的才能存入数据库</code>，这个时候，你就要用到 dto 了，</p>
 <ol>
 <li>你要先从页面上拿到 vo，然后判断 vo 中的 age 是不是大于 20。</li>
@@ -305,14 +187,8 @@
 <blockquote>
 <p>PS： dto 和 entity 里面的字段应该是一样的，dto 只是 entity 到 vo，或者 vo 到 entity 的中间过程，如果没有这个过程，你仍然可以做到增删改查，这是根据具体公司规范来的 。</p>
 </blockquote>
-<h3 id="14-daoservicecontroller">
-  1.4. DAO\Service\Controller
-  <a class="heading-link" href="#14-daoservicecontroller">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h3>
-<p><a href="https://blog.csdn.net/qq_22771739/article/details/82344336">原文链接</a></p>
+<h3 id="14-daoservicecontroller">1.4. DAO\Service\Controller</h3>
+<p><a href="https://blog.csdn.net/qq_22771739/article/details/82344336" target="_blank" rel="noopener noreffer ">原文链接</a></p>
 <p><code>DAO层</code>：
 DAO层叫<code>数据访问层</code>，全称为data access object，属于一种比较底层，比较基础的操作，具体到对于某个表的增删改查，也就是说某个DAO一定是和数据库的某一张表一一对应的，其中封装了增删改查基本操作，建议DAO只做原子操作，增删改查。</p>
 <p><code>Service层</code>：
@@ -321,77 +197,41 @@ Service层叫服务层，被称为<code>服务</code>，粗略的理解就是对
 Controler负责请求<code>转发</code>，接受页面过来的参数，传给Service处理，接到返回值，再传给页面。</p>
 <p><code>总结</code>：
 个人理解DAO面向表，Service面向业务。后端开发时先数据库设计出所有表，然后对每一张表设计出DAO层，然后根据具体的业务逻辑进一步封装DAO层成一个Service层，对外提供成一个服务。</p>
-
-      </div>
-
-
-      <footer>
-        
-
-
-        
-        
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
-
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-09-13</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://ssdreamc.github.io/posts/tech/" data-title="tech notes" data-hashtags="记录,tech"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://ssdreamc.github.io/posts/tech/" data-hashtag="记录"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://ssdreamc.github.io/posts/tech/" data-title="tech notes"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://ssdreamc.github.io/posts/tech/" data-title="tech notes"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://ssdreamc.github.io/posts/tech/" data-title="tech notes"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
-  <section class="container">
-    Love xiaoguai, be loved by xiaoguai.<br>
-    ©
-    
-      2010 -
-    
-    2023
-     ssdreamC·凉月 
-    ·
-    
-    技术支持 <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
-  </section>
-</footer>
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a>,&nbsp;<a href="/tags/tech/">tech</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
 
-  </main>
+    <div class="post-nav"><a href="/posts/old/2020/%E8%B0%81/" class="prev" rel="prev" title="谁"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>谁</a>
+            <a href="/posts/readme/" class="next" rel="next" title="第零篇">第零篇<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ssdreamC.github.io" target="_blank">ssdreamC</a></span></div>
+        </div>
+    </footer></div>
 
-  
-
-  
-  
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</body>
-
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>国产芯片 on ssdreamC·凉月</title>
-    <link>https://ssdreamc.github.io/tags/%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87/</link>
-    <description>Recent content in 国产芯片 on ssdreamC·凉月</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Aug 2022 23:26:12 +0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
-      <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Thu, 18 Aug 2022 23:26:12 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-      <description>适用 USO 1.0根系统（deepin v23）发布前版本
-0. 正常使用建议链接到标题原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free注释掉即可正常更新 需要使用系统设置来更新，UOS大版本更新使用apt会出现依赖错误； QQ 推荐 QQ纯净版；微信推荐UOS版（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定 搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法官网下载个人版 1. jdk 与 maven链接到标题java -version 发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:
-下载相关文件: https://docs.microsoft.com/zh-cn/java/openjdk/download 解压 sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/ 编辑 ~/.bashrc export JAVA_HOME=/usr/local/java/jdk-17.0.4+8 export JRE_HOME=${JAVA_HOME} export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH 使之生效 source ~/.bashrc 检查 java -version 安装 maven 类似
-选择合适版本下载：https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz 解压 sudo tar xzvf apache-maven-3.</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>国产芯片 - 标签 - </title>
+        <link>https://ssdreamc.github.io/tags/%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87/</link>
+        <description>国产芯片 - 标签 - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87/" rel="self" type="application/rss+xml" /><item>
+    <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
+    <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[适用 USO 1.0根系统（deepin v23）发布前版本 0. 正常使用建议 原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中de]]></description>
+</item>
+</channel>
 </rss>

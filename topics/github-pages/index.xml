@@ -1,21 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GitHub pages on ssdreamC·凉月</title>
-    <link>https://ssdreamc.github.io/topics/github-pages/</link>
-    <description>Recent content in GitHub pages on ssdreamC·凉月</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 31 Jan 2022 16:00:00 +0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/github-pages/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>第零篇</title>
-      <link>https://ssdreamc.github.io/posts/readme/</link>
-      <pubDate>Mon, 31 Jan 2022 16:00:00 +0800</pubDate>
-      
-      <guid>https://ssdreamc.github.io/posts/readme/</guid>
-      <description>ssdreamc.github.io链接到标题I just want a page site for myself, thanks github.
-but the net is not health enough, sad…</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GitHub pages - topic - </title>
+        <link>https://ssdreamc.github.io/topics/github-pages/</link>
+        <description>GitHub pages - topic - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 31 Jan 2022 16:00:00 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/github-pages/" rel="self" type="application/rss+xml" /><item>
+    <title>第零篇</title>
+    <link>https://ssdreamc.github.io/posts/readme/</link>
+    <pubDate>Mon, 31 Jan 2022 16:00:00 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/readme/</guid>
+    <description><![CDATA[ssdreamc.github.io I just want a page site for myself, thanks github. but the net is not health enough, sad…]]></description>
+</item>
+</channel>
 </rss>
