@@ -35,7 +35,7 @@
     <pubDate>Mon, 31 Jan 2022 16:00:00 &#43;0800</pubDate>
     <author>ssdreamC</author>
     <guid>https://ssdreamc.github.io/posts/readme/</guid>
-    <description><![CDATA[ssdreamc.github.io I just want a page site for myself, thanks github. but the net is not health enough, sad…]]></description>
+    <description><![CDATA[ssdreamc.github.io I just want a page site for myself, thanks github. but the net is not health enough, sad… about hugo: # echo &#34;clean and rebuild...&#34; rm -Path public/* -Exclude .git -Recurse -Force hugo]]></description>
 </item>
 <item>
     <title>tech notes</title>
