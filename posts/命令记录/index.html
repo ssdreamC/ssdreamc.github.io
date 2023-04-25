@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>命令记录 - </title><meta name="Description" content="hello, this is ssdreamC"><meta property="og:title" content="命令记录" />
+<meta property="og:description" content="命令记录 cmd、pw 修改硬件时间为UTC PS C:\Users\kuail&gt; Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1 解除 powershell 的签名要求 PS C:\Windows\system32&gt; Get-ExecutionPolicy Restricted PS C:\Windows\system32&gt; set-ExecutionPolicy RemoteSigned 执行策略更改 执行策略可帮助你防止执行不信任的脚" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-25T09:00:00+08:00" />
+<meta property="article:modified_time" content="2023-04-25T09:00:00+08:00" /><meta property="og:site_name" content="ssdreamC·凉月" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="命令记录"/>
+<meta name="twitter:description" content="命令记录 cmd、pw 修改硬件时间为UTC PS C:\Users\kuail&gt; Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1 解除 powershell 的签名要求 PS C:\Windows\system32&gt; Get-ExecutionPolicy Restricted PS C:\Windows\system32&gt; set-ExecutionPolicy RemoteSigned 执行策略更改 执行策略可帮助你防止执行不信任的脚"/>
+<meta name="application-name" content="ssdreamC·凉月">
+<meta name="apple-mobile-web-app-title" content="ssdreamC·凉月"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" /><link rel="prev" href="https://ssdreamc.github.io/posts/my-first-post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "命令记录",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ssdreamc.github.io\/posts\/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95\/"
+        },"genre": "posts","keywords": "cmd, powershell, sql, git","wordcount":  1448 ,
+        "url": "https:\/\/ssdreamc.github.io\/posts\/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95\/","datePublished": "2023-04-25T09:00:00+08:00","dateModified": "2023-04-25T09:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "ssdreamC"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">ssdreamC·凉月</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="内容"> 内容 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">ssdreamC·凉月</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="内容">内容</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">命令记录</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-25">2023-04-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1448 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#cmdpw">cmd、pw</a>
+      <ul>
+        <li><a href="#修改硬件时间为utc">修改硬件时间为UTC</a></li>
+        <li><a href="#解除-powershell-的签名要求">解除 powershell 的签名要求</a></li>
+        <li><a href="#2021年8月26日">2021年8月26日</a></li>
+        <li><a href="#pa-中的python包冲突">pa 中的python包冲突</a></li>
+        <li><a href="#2021年9月3日">2021年9月3日</a></li>
+        <li><a href="#微信多开">微信多开</a></li>
+        <li><a href="#wifi">wifi</a></li>
+        <li><a href="#hash">hash</a></li>
+        <li><a href="#windows自修复">Windows自修复</a></li>
+      </ul>
+    </li>
+    <li><a href="#docker">docker</a>
+      <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+      </ul>
+    </li>
+    <li><a href="#wsl">wsl</a>
+      <ul>
+        <li><a href="#重启wsl">重启wsl</a></li>
+      </ul>
+    </li>
+    <li><a href="#python">python</a>
+      <ul>
+        <li><a href="#venv升级">venv升级</a></li>
+        <li><a href="#存list">存list</a></li>
+      </ul>
+    </li>
+    <li><a href="#sql">sql</a>
+      <ul>
+        <li><a href="#mysql">mysql</a></li>
+      </ul>
+    </li>
+    <li><a href="#github">github</a>
+      <ul>
+        <li><a href="#github-fork">github fork</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="命令记录">命令记录</h1>
+<h2 id="cmdpw">cmd、pw</h2>
+<h3 id="修改硬件时间为utc">修改硬件时间为UTC</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Users</span><span class="p">\</span><span class="n">kuail</span><span class="p">&gt;</span> <span class="n">Reg</span> <span class="n">add</span> <span class="n">HKLM</span><span class="p">\</span><span class="n">SYSTEM</span><span class="p">\</span><span class="n">CurrentControlSet</span><span class="p">\</span><span class="n">Control</span><span class="p">\</span><span class="n">TimeZoneInformation</span> <span class="p">/</span><span class="n">v</span> <span class="n">RealTimeIsUniversal</span> <span class="p">/</span><span class="n">t</span> <span class="n">REG_DWORD</span> <span class="p">/</span><span class="n">d</span> <span class="mf">1</span>
+</span></span></code></pre></div><h3 id="解除-powershell-的签名要求">解除 powershell 的签名要求</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">system32</span><span class="p">&gt;</span> <span class="nb">Get-ExecutionPolicy</span>
+</span></span><span class="line"><span class="cl"><span class="n">Restricted</span>
+</span></span><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">system32</span><span class="p">&gt;</span> <span class="nb">set-ExecutionPolicy</span> <span class="n">RemoteSigned</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">执行策略更改</span>
+</span></span><span class="line"><span class="cl"><span class="err">执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如</span> <span class="n">https</span><span class="err">:</span><span class="p">/</span><span class="n">go</span><span class="p">.</span><span class="py">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">fwlink</span><span class="p">/</span><span class="k">?</span><span class="n">LinkID</span><span class="p">=</span><span class="mf">135170</span>
+</span></span><span class="line"><span class="cl"><span class="err">中的</span> <span class="n">about_Execution_Policies</span> <span class="err">帮助主题所述。是否要更改执行策略</span><span class="p">?</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="no">Y</span><span class="p">]</span> <span class="err">是</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>  <span class="p">[</span><span class="no">A</span><span class="p">]</span> <span class="err">全是</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="p">[</span><span class="no">N</span><span class="p">]</span> <span class="err">否</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>  <span class="p">[</span><span class="no">L</span><span class="p">]</span> <span class="err">全否</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>  <span class="p">[</span><span class="no">S</span><span class="p">]</span> <span class="err">暂停</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>  <span class="p">[?]</span> <span class="err">帮助</span> <span class="p">(</span><span class="err">默认值为“</span><span class="n">N</span><span class="err">”</span><span class="p">)</span><span class="err">:</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">system32</span><span class="p">&gt;</span>
+</span></span></code></pre></div><hr>
+<h3 id="2021年8月26日">2021年8月26日</h3>
+<p>tensorflow 支持到了 python3.9、cuda11.2、cudnn8.1.0、tensorRT6.0</p>
+<h3 id="pa-中的python包冲突">pa 中的python包冲突</h3>
+<p><em>2021年9月1日</em></p>
+<p>安装代码格式化工具 <code>black</code> 后产生：</p>
+<blockquote>
+<p>ERROR: pip&rsquo;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow-gpu 2.6.0 requires typing-extensions~=3.7.4, but you have typing-extensions 3.10.0.2 which is incompatible.</p>
+</blockquote>
+<h3 id="2021年9月3日">2021年9月3日</h3>
+<p><code>git</code></p>
+<p>git 设置了全局名称、邮箱，ssh-key
+如果 git clone 后没有分支：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git remote update origin --prune
+</span></span></code></pre></div><p><code>blade</code></p>
+<ol>
+<li>balde-dox 相关文档</li>
+<li>bladex-tool 先构建</li>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">mvn istall
+</span></span></code></pre></div></li>
+<li>然后 bladex</li>
+<li>最后是 bladex-biz</li>
+</ol>
+<ul>
+<li>框架使用的东西都比较老，不可以用 jdk-16</li>
+<li>在tool中 instlall 时，ojdbc7-12.2.0.1出了问题：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">   mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.2.0.1 -Dpackaging=jar -Dfile=ojdbc7-12.2.0.1.jar
+</span></span></code></pre></div><ul>
+<li>在bladex中 install 时，taobao-sdk-20200415.jar 出了问题：mvn新版本block了http，从3.8.2降级到了3.6.3</li>
+</ul>
+<h3 id="微信多开">微信多开</h3>
+<p>二进制编辑器打开 <code>WeChatWin.dll</code></p>
+<p>搜索输入
+E86B00000084C07456566A00</p>
+<p>替换输入
+E86B00000084C0EB56566A00</p>
+<h3 id="wifi">wifi</h3>
+<pre tabindex="0"><code class="language-pw" data-lang="pw">netsh wlan connect name=the_wifi_name
+</code></pre><h3 id="hash">hash</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">certutil -hashfile <span class="p">&lt;</span>文件名<span class="p">&gt;</span> &lt;hash类型 MD5、SHA1、SHA256&gt;
+</span></span></code></pre></div><h3 id="windows自修复">Windows自修复</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">DISM</span><span class="p">.</span><span class="py">exe</span> <span class="p">/</span><span class="n">Online</span> <span class="p">/</span><span class="nb">Cleanup-image</span> <span class="p">/{}</span>
+</span></span><span class="line"><span class="cl"><span class="c"># ScanHealth，扫描全部系统文件和系统映像文件是否与官方版一致</span>
+</span></span><span class="line"><span class="cl"><span class="c"># ChechHealth，检查文件损坏程度</span>
+</span></span><span class="line"><span class="cl"><span class="c"># RestoreHealth，联网还原</span>
+</span></span><span class="line"><span class="cl"><span class="n">sfc</span> <span class="c"># 系统文件检查器</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /scannow：扫描所有受保护系统文件的完整性，并尽可能修复有问题的文件。</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /verifyonly：扫描所有受保护系统文件的完整性，不会执行修复操作。</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /scanfile：扫描引用的文件的完整性，如果找到问题，则修复文件(需指定完整路径)。</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /verifyfile：验证带有完整路径的文件的完整性，但不会执行修复操作。</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /offbootdir：对于脱机修复，指定脱机启动目录的位置。</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /offwindir：对于脱机修复，指定脱机Windows目录的位置。</span>
+</span></span><span class="line"><span class="cl"><span class="c"># sfc /logfile：对于脱机修复，通过指定日志文件路径选择性地启用记录。</span>
+</span></span></code></pre></div><h2 id="docker">docker</h2>
+<h3 id="getting-started">Getting Started</h3>
+<p><code>clone a repository</code></p>
+<p>The Getting Started project is a simple GitHub repository which contains everything you need to build an image and run it as a container.</p>
+<p>Clone the repository by running Git in a container.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">run</span> <span class="nf">--name</span> <span class="nf">repo</span> <span class="nf">alpine</span><span class="nv">/git</span> <span class="nf">clone</span> <span class="nf">https:</span><span class="err">/</span><span class="nv">/github.com/docker/getting-started.git</span>
+</span></span><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">cp</span> <span class="nf">repo:</span><span class="nv">/git/gettring-started</span><span class="err">/</span> <span class="nf">.</span>
+</span></span></code></pre></div><p><code>build the image</code></p>
+<p>A Docker image is a private file system just for your container. It provides all the files and code your container needs.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="line"><span class="cl"><span class="nf">cd</span> <span class="nf">getting-started</span>
+</span></span><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">build</span> <span class="nf">-t</span> <span class="nf">docker101tutorial</span> <span class="nf">.</span>
+</span></span></code></pre></div><p><code>Run your first container</code></p>
+<p>Start a container based on the image you built in the previous step. Running a container launches your application with private resources, securely isolated from the rest of your machine.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">run</span> <span class="nf">-d</span> <span class="nf">-p</span> <span class="nf">80:80</span> <span class="nf">--name</span> <span class="nf">docker-tutorial</span> <span class="nf">docker101tutorial</span>
+</span></span><span class="line"><span class="cl"><span class="nf">#</span> <span class="nf">-d</span> <span class="nf">在分离模式下运行容器</span>
+</span></span><span class="line"><span class="cl"><span class="nf">#</span> <span class="nf">-p</span> <span class="nf">80:80</span> <span class="nf">将主机的80</span> <span class="nf">端口映射到容器的80</span>
+</span></span></code></pre></div><p><code>Now save and share your image</code></p>
+<p>You must be signed in to Docker Hub to share your image.</p>
+<p>Save and share your image on Docker Hub to enable other users to easily download and run the image on any destination machine.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">tag</span> <span class="nf">doker101tutorial</span> <span class="p">{</span><span class="nf">username</span><span class="p">}</span><span class="nv">/docker101tutorial</span>
+</span></span><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">push</span> <span class="p">{</span><span class="nf">username</span><span class="p">}</span><span class="nv">/docker101tutorial</span>
+</span></span></code></pre></div><h2 id="wsl">wsl</h2>
+<h3 id="重启wsl">重启wsl</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># wsl基于LxssManager</span>
+</span></span><span class="line"><span class="cl">net stop LxssManager
+</span></span><span class="line"><span class="cl">net start LxssManager
+</span></span></code></pre></div><h2 id="python">python</h2>
+<h3 id="venv升级">venv升级</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="line"><span class="cl"><span class="nf">python</span> <span class="nf">-m</span> <span class="nf">venv</span> <span class="nf">.</span><span class="nv">/venv</span> <span class="nf">--upgrade</span>
+</span></span></code></pre></div><h3 id="存list">存list</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pickle</span>
+</span></span><span class="line"><span class="cl"><span class="n">text_data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="n">text_txt</span> <span class="o">=</span> <span class="s1">&#39;text.txt&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">text_txt</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">text</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">text_data</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">text_txt</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">text</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="sql">sql</h2>
+<h3 id="mysql">mysql</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">thebluetable</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">exists</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">white2021</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">thebluetable</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">and</span><span class="w"> </span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人详细地址</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">thebluetable</span><span class="p">.</span><span class="err">收报人详细地址</span><span class="w"> </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="n">blue2022</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">blue2022</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">white2021</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">on</span><span class="w"> </span><span class="p">(</span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blue2022</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人详细地址</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blue2022</span><span class="p">.</span><span class="err">收报人详细地址</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h2 id="github">github</h2>
+<h3 id="github-fork">github fork</h3>
+<p>fork其它项目后如何保持更新</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 查看是不是有上游仓库</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">remote</span> <span class="n">-v</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 设置上游仓库</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="n">dillonzq</span><span class="p">/</span><span class="n">LoveIt</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 同步上游仓库</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 签出到自己的本地分支</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 变基</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">rebase</span> <span class="n">upstream</span><span class="p">/</span><span class="n">master</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 更新自己的仓库</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-04-25</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" data-title="命令记录" data-hashtags="cmd,powershell,sql,git"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" data-hashtag="cmd"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" data-title="命令记录"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" data-title="命令记录"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" data-title="命令记录"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cmd/">cmd</a>,&nbsp;<a href="/tags/powershell/">powershell</a>,&nbsp;<a href="/tags/sql/">sql</a>,&nbsp;<a href="/tags/git/">git</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/my-first-post/" class="prev" rel="prev" title="第一篇测试稿"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第一篇测试稿</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ssdreamC.github.io" target="_blank">ssdreamC</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

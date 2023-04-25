@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>sql - 标签 - </title>
+        <link>https://ssdreamc.github.io/tags/sql/</link>
+        <description>sql - 标签 - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/sql/" rel="self" type="application/rss+xml" /><item>
+    <title>命令记录</title>
+    <link>https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[命令记录 cmd、pw 修改硬件时间为UTC PS C:\Users\kuail&gt; Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1 解除 powershell 的签名要求 PS C:\Windows\system32&gt; Get-ExecutionPolicy Restricted PS C:\Windows\system32&gt; set-ExecutionPolicy RemoteSigned 执行策略更改 执行策略可帮助你防止执行不信任的脚]]></description>
+</item>
+</channel>
+</rss>

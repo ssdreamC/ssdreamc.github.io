@@ -3,7 +3,15 @@
         <title>所有文章 - </title>
         <link>https://ssdreamc.github.io/posts/</link>
         <description>所有文章 | </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 19 Aug 2022 11:14:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>命令记录</title>
+    <link>https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[命令记录 cmd、pw 修改硬件时间为UTC PS C:\Users\kuail&gt; Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1 解除 powershell 的签名要求 PS C:\Windows\system32&gt; Get-ExecutionPolicy Restricted PS C:\Windows\system32&gt; set-ExecutionPolicy RemoteSigned 执行策略更改 执行策略可帮助你防止执行不信任的脚]]></description>
+</item>
+<item>
     <title>第一篇测试稿</title>
     <link>https://ssdreamc.github.io/posts/my-first-post/</link>
     <pubDate>Fri, 19 Aug 2022 11:14:12 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
     <author>ssdreamC</author>
     <guid>https://ssdreamc.github.io/posts/old/2018/%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</guid>
     <description><![CDATA[那片叶落 你的影子 继续在我的眼前走过 那般花落 你的声音 依旧在我的耳畔响着 那片雨落 你说遗忘 却成了挂在口中的折磨 那般泪落 你说过往 却作了褪色黑白的错过]]></description>
-</item>
-<item>
-    <title>一片片竹林隐去了多少人和事</title>
-    <link>https://ssdreamc.github.io/posts/old/2018/%E4%B8%80%E7%89%87%E7%89%87%E7%AB%B9%E6%9E%97%E9%9A%90%E5%8E%BB%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E5%92%8C%E4%BA%8B/</link>
-    <pubDate>Thu, 11 Oct 2018 04:38:12 &#43;0800</pubDate>
-    <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/old/2018/%E4%B8%80%E7%89%87%E7%89%87%E7%AB%B9%E6%9E%97%E9%9A%90%E5%8E%BB%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E5%92%8C%E4%BA%8B/</guid>
-    <description><![CDATA[一片片竹林隐去了多少人和事 一座座青山淡去了思绪 月下的对饮 抹不清清辉的外衣 是否饮过这醉意 任它飘过三千里 江山更有颜如玉]]></description>
 </item>
 </channel>
 </rss>
