@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ssdreamc.github.io\/posts\/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95\/"
-        },"genre": "posts","keywords": "cmd, powershell, sql, git","wordcount":  1448 ,
+        },"genre": "posts","keywords": "cmd, powershell, sql, git","wordcount":  1462 ,
         "url": "https:\/\/ssdreamc.github.io\/posts\/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95\/","datePublished": "2023-04-25T09:00:00+08:00","dateModified": "2023-04-25T09:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">命令记录</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-25">2023-04-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1448 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-25">2023-04-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1462 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -114,6 +114,7 @@
     </li>
     <li><a href="#github">github</a>
       <ul>
+        <li><a href="#git-clone-后的子模块">git clone 后的子模块</a></li>
         <li><a href="#github-fork">github fork</a></li>
       </ul>
     </li>
@@ -128,10 +129,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">Restricted</span>
 </span></span><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">system32</span><span class="p">&gt;</span> <span class="nb">set-ExecutionPolicy</span> <span class="n">RemoteSigned</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">执行策略更改</span>
-</span></span><span class="line"><span class="cl"><span class="err">执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如</span> <span class="n">https</span><span class="err">:</span><span class="p">/</span><span class="n">go</span><span class="p">.</span><span class="py">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">fwlink</span><span class="p">/</span><span class="k">?</span><span class="n">LinkID</span><span class="p">=</span><span class="mf">135170</span>
-</span></span><span class="line"><span class="cl"><span class="err">中的</span> <span class="n">about_Execution_Policies</span> <span class="err">帮助主题所述。是否要更改执行策略</span><span class="p">?</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="no">Y</span><span class="p">]</span> <span class="err">是</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>  <span class="p">[</span><span class="no">A</span><span class="p">]</span> <span class="err">全是</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="p">[</span><span class="no">N</span><span class="p">]</span> <span class="err">否</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>  <span class="p">[</span><span class="no">L</span><span class="p">]</span> <span class="err">全否</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>  <span class="p">[</span><span class="no">S</span><span class="p">]</span> <span class="err">暂停</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>  <span class="p">[?]</span> <span class="err">帮助</span> <span class="p">(</span><span class="err">默认值为“</span><span class="n">N</span><span class="err">”</span><span class="p">)</span><span class="err">:</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl"><span class="n">执行策略更改</span>
+</span></span><span class="line"><span class="cl"><span class="n">执行策略可帮助你防止执行不信任的脚本</span><span class="err">。</span><span class="n">更改执行策略可能会产生安全风险</span><span class="err">，</span><span class="n">如</span> <span class="n">https</span><span class="err">:</span><span class="p">/</span><span class="n">go</span><span class="p">.</span><span class="py">microsoft</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">fwlink</span><span class="p">/</span><span class="k">?</span><span class="n">LinkID</span><span class="p">=</span><span class="mf">135170</span>
+</span></span><span class="line"><span class="cl"><span class="n">中的</span> <span class="n">about_Execution_Policies</span> <span class="n">帮助主题所述</span><span class="err">。</span><span class="n">是否要更改执行策略</span><span class="p">?</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="no">Y</span><span class="p">]</span> <span class="n">是</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>  <span class="p">[</span><span class="no">A</span><span class="p">]</span> <span class="n">全是</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="p">[</span><span class="no">N</span><span class="p">]</span> <span class="n">否</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>  <span class="p">[</span><span class="no">L</span><span class="p">]</span> <span class="n">全否</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>  <span class="p">[</span><span class="no">S</span><span class="p">]</span> <span class="n">暂停</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>  <span class="p">[?]</span> <span class="n">帮助</span> <span class="p">(</span><span class="n">默认值为</span><span class="err">“</span><span class="n">N</span><span class="err">”</span><span class="p">)</span><span class="err">:</span> <span class="n">y</span>
 </span></span><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">system32</span><span class="p">&gt;</span>
 </span></span></code></pre></div><hr>
 <h3 id="2021年8月26日">2021年8月26日</h3>
@@ -212,7 +213,7 @@ E86B00000084C0EB56566A00</p>
 </span></span><span class="line"><span class="cl"><span class="nf">docker</span> <span class="nf">push</span> <span class="p">{</span><span class="nf">username</span><span class="p">}</span><span class="nv">/docker101tutorial</span>
 </span></span></code></pre></div><h2 id="wsl">wsl</h2>
 <h3 id="重启wsl">重启wsl</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># wsl基于LxssManager</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># wsl基于LxssManager</span>
 </span></span><span class="line"><span class="cl">net stop LxssManager
 </span></span><span class="line"><span class="cl">net start LxssManager
 </span></span></code></pre></div><h2 id="python">python</h2>
@@ -235,20 +236,23 @@ E86B00000084C0EB56566A00</p>
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">on</span><span class="w"> </span><span class="p">(</span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blue2022</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人详细地址</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blue2022</span><span class="p">.</span><span class="err">收报人详细地址</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">white2021</span><span class="p">.</span><span class="err">收报人姓名</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></div><h2 id="github">github</h2>
-<h3 id="github-fork">github fork</h3>
+<h3 id="git-clone-后的子模块">git clone 后的子模块</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule init
+</span></span><span class="line"><span class="cl">git submodule update --remote
+</span></span></code></pre></div><h3 id="github-fork">github fork</h3>
 <p>fork其它项目后如何保持更新</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 查看是不是有上游仓库</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">remote</span> <span class="n">-v</span>
-</span></span><span class="line"><span class="cl"><span class="c"># 设置上游仓库</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="n">dillonzq</span><span class="p">/</span><span class="n">LoveIt</span><span class="p">.</span><span class="py">git</span>
-</span></span><span class="line"><span class="cl"><span class="c"># 同步上游仓库</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
-</span></span><span class="line"><span class="cl"><span class="c"># 签出到自己的本地分支</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
-</span></span><span class="line"><span class="cl"><span class="c"># 变基</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">rebase</span> <span class="n">upstream</span><span class="p">/</span><span class="n">master</span>
-</span></span><span class="line"><span class="cl"><span class="c"># 更新自己的仓库</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看是不是有上游仓库</span>
+</span></span><span class="line"><span class="cl">git remote -v
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置上游仓库</span>
+</span></span><span class="line"><span class="cl">git remote add upstream git@github.com:dillonzq/LoveIt.git
+</span></span><span class="line"><span class="cl"><span class="c1"># 同步上游仓库</span>
+</span></span><span class="line"><span class="cl">git fetch upstream
+</span></span><span class="line"><span class="cl"><span class="c1"># 签出到自己的本地分支</span>
+</span></span><span class="line"><span class="cl">git checkout master
+</span></span><span class="line"><span class="cl"><span class="c1"># 变基</span>
+</span></span><span class="line"><span class="cl">git rebase upstream/master
+</span></span><span class="line"><span class="cl"><span class="c1"># 更新自己的仓库</span>
+</span></span><span class="line"><span class="cl">git push origin master
 </span></span></code></pre></div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -274,7 +278,7 @@ E86B00000084C0EB56566A00</p>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.117.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ssdreamC.github.io" target="_blank">ssdreamC</a></span></div>
         </div>
     </footer></div>
