@@ -5,10 +5,10 @@
         <description>torch - 标签 - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 18 Mar 2022 02:20:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/torch/" rel="self" type="application/rss+xml" /><item>
     <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
-    <link>https://ssdreamc.github.io/posts/uso/</link>
+    <link>https://ssdreamc.github.io/posts/2023/uso/</link>
     <pubDate>Fri, 18 Mar 2022 02:20:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/uso/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/uso/</guid>
     <description><![CDATA[与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。 需要注意的地方可能有三点 一 容量空间变小： 以128G硬盘为例，按照]]></description>
 </item>
 </channel>

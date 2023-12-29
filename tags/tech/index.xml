@@ -5,10 +5,10 @@
         <description>tech - 标签 - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 13 Sep 2021 03:19:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/tech/" rel="self" type="application/rss+xml" /><item>
     <title>tech notes</title>
-    <link>https://ssdreamc.github.io/posts/tech/</link>
+    <link>https://ssdreamc.github.io/posts/2023/tech/</link>
     <pubDate>Mon, 13 Sep 2021 03:19:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/tech/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/tech/</guid>
     <description><![CDATA[about some tech marked 1. spring boot 1.1. PostMapping 属性 name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的head]]></description>
 </item>
 </channel>

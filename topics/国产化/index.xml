@@ -5,18 +5,18 @@
         <description>国产化 - topic - </description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/topics/%E5%9B%BD%E4%BA%A7%E5%8C%96/" rel="self" type="application/rss+xml" /><item>
     <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
-    <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+    <link>https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[适用 USO 1.0根系统（deepin v23）发布前版本 0. 正常使用建议 原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中de]]></description>
 </item>
 <item>
     <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
-    <link>https://ssdreamc.github.io/posts/uso/</link>
+    <link>https://ssdreamc.github.io/posts/2023/uso/</link>
     <pubDate>Fri, 18 Mar 2022 02:20:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/uso/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/uso/</guid>
     <description><![CDATA[与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。 需要注意的地方可能有三点 一 容量空间变小： 以128G硬盘为例，按照]]></description>
 </item>
 </channel>

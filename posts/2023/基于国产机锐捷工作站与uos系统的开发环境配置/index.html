@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>基于国产机锐捷工作站与UOS系统的开发环境配置 - </title><meta name="Description" content="hello, this is ssdreamC"><meta property="og:title" content="基于国产机锐捷工作站与UOS系统的开发环境配置" />
+<meta property="og:description" content="适用 USO 1.0根系统（deepin v23）发布前版本 0. 正常使用建议 原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中de" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-18T23:26:12+08:00" />
+<meta property="article:modified_time" content="2022-08-18T23:26:12+08:00" /><meta property="og:site_name" content="ssdreamC·凉月" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="基于国产机锐捷工作站与UOS系统的开发环境配置"/>
+<meta name="twitter:description" content="适用 USO 1.0根系统（deepin v23）发布前版本 0. 正常使用建议 原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中de"/>
+<meta name="application-name" content="ssdreamC·凉月">
+<meta name="apple-mobile-web-app-title" content="ssdreamC·凉月"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" /><link rel="prev" href="https://ssdreamc.github.io/posts/2023/uso/" /><link rel="next" href="https://ssdreamc.github.io/posts/my-first-post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "基于国产机锐捷工作站与UOS系统的开发环境配置",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ssdreamc.github.io\/posts\/2023\/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE\/"
+        },"genre": "posts","keywords": "国产化, uos, 国产芯片","wordcount":  985 ,
+        "url": "https:\/\/ssdreamc.github.io\/posts\/2023\/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE\/","datePublished": "2022-08-18T23:26:12+08:00","dateModified": "2022-08-18T23:26:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "ssdreamC"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">ssdreamC·凉月</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="内容"> 内容 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">ssdreamC·凉月</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="内容">内容</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">基于国产机锐捷工作站与UOS系统的开发环境配置</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%9B%BD%E4%BA%A7%E5%8C%96/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>国产化</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-18">2022-08-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 985 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#0-正常使用建议">0. 正常使用建议</a></li>
+    <li><a href="#1-jdk-与-maven">1. jdk 与 maven</a></li>
+    <li><a href="#python-和-django">python 和 django</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>适用 USO 1.0根系统（deepin v23）发布前版本</p>
+<h2 id="0-正常使用建议">0. 正常使用建议</h2>
+<ol>
+<li>原有商店已废弃，<code>sudo apt install deepin-app-store</code> 安装深度商店（已废弃的商店不用卸载）</li>
+<li>将 <code>/etc/apt/sources.list</code> 中<code>deb [by-hash=force trusted=yes ] http://192.168.225.247:8899 eagle main contrib non-free</code>注释掉即可正常更新</li>
+<li>需要使用系统设置来更新，UOS大版本更新使用<code>apt</code>会出现依赖错误；</li>
+<li>QQ 推荐 <code>QQ纯净版</code>；微信推荐<code>UOS版</code>（在商店中选择微信后再在右上角选择UOS）；这两个是linux原生，虽然简陋些但最稳定</li>
+<li>搜狗输入法自带的是专业版，有效期90天，可以去搜狗输入法<a href="https://shurufa.sogou.com/linux" target="_blank" rel="noopener noreffer ">官网</a>下载个人版</li>
+</ol>
+<h2 id="1-jdk-与-maven">1. jdk 与 maven</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -version
+</span></span></code></pre></div><p>发现系统无 java 开发环境，需要自行配置，以 微软 openjdk 为例:</p>
+<ol>
+<li>下载相关文件: <a href="https://docs.microsoft.com/zh-cn/java/openjdk/download" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/zh-cn/java/openjdk/download</a></li>
+<li>解压 <code>sudo tar -zxvf microsoft-jdk-17.0.4-linux-x64.tar.gz -C /usr/local/java/</code></li>
+<li>编辑 <code>~/.bashrc</code>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/java/jdk-17.0.4+8
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">JRE_HOME</span><span class="o">=</span><span class="si">${</span><span class="nv">JAVA_HOME</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CLASSPATH</span><span class="o">=</span>.:<span class="si">${</span><span class="nv">JAVA_HOME</span><span class="si">}</span>/lib:<span class="si">${</span><span class="nv">JRE_HOME</span><span class="si">}</span>/lib
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">JAVA_HOME</span><span class="si">}</span>/bin:<span class="nv">$PATH</span>
+</span></span></code></pre></div></li>
+<li>使之生效 <code>source ~/.bashrc</code></li>
+<li>检查 <code>java -version</code></li>
+</ol>
+<p>安装 maven 类似</p>
+<ol>
+<li>选择合适版本下载：https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz</li>
+<li>解压 <code>sudo tar xzvf apache-maven-3.8.6-bin.tar.gz -C /opt/</code></li>
+<li>同上，修改环境变量 <code>export PATH=/opt/apache-maven-3.8.6/bin:$PATH</code>  并<code>source ~/.bashrc</code>，检查 <code>mvn -v</code></li>
+</ol>
+<blockquote>
+<p>在云平台中使用的jdk版本要求1.8，应不大于 8u202；由于blade开发不规范，mvn版本应处于$(3.3, 3.6.3]$之中</p>
+</blockquote>
+<h2 id="python-和-django">python 和 django</h2>
+<ul>
+<li>适用范围同上，UOS根系统（deepin v23）发布前版本；</li>
+<li>deepin v23 preview 中默认 python 版本为最新的 3.10</li>
+<li>UOS、deepin 的 apt 源未提供可用python，python官方未提供deb、rpm等安装包，需自行编译</li>
+</ul>
+<ol>
+<li>准备编译所需依赖
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+</span></span></code></pre></div></li>
+<li>下载所需版本的二进制文件 <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreffer ">https://www.python.org/downloads/</a></li>
+<li>解压 <code>tar xvf Python-3.10.6.tar.xz</code></li>
+<li>配置编译选项 <code>./configure --enable-optimizations --with-ensurepip=install --prefix=/usr/local/python3.10 --with-openssl=/usr/bin/openssl</code>
+<blockquote>
+<p>相关的配置文档在 <a href="https://docs.python.org/3/using/configure.html#configure-options" target="_blank" rel="noopener noreffer ">https://docs.python.org/3/using/configure.html#configure-options</a></p>
+</blockquote>
+</li>
+<li>编译 <code>make -j16</code></li>
+<li><del>安装 <code>make altinstall</code></del>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">The necessary bits to build these optional modules were not found:
+</span></span><span class="line"><span class="cl">_dbm                  _hashlib              _lzma              
+</span></span><span class="line"><span class="cl">_ssl                                                           
+</span></span><span class="line"><span class="cl">To find the necessary bits, look in setup.py in detect_modules<span class="o">()</span> <span class="k">for</span> the module<span class="err">&#39;</span>s name.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">The following modules found by detect_modules<span class="o">()</span> in setup.py, have been
+</span></span><span class="line"><span class="cl">built by the Makefile instead, as configured by the Setup files:
+</span></span><span class="line"><span class="cl">_abc                  <span class="nb">pwd</span>                   <span class="nb">time</span>               
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Could not build the ssl module!
+</span></span><span class="line"><span class="cl">Python requires a OpenSSL 1.1.1 or newer
+</span></span></code></pre></div></li>
+<li><em><strong>编译失败，等系统更新吧</strong></em>，准备conda</li>
+<li>下载miniconda（或者anaconda）
+<blockquote>
+<p><a href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html" target="_blank" rel="noopener noreffer ">https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html</a></p>
+</blockquote>
+</li>
+<li>校验sha256 <code>sha256sum ***</code></li>
+<li>安装 <code>bash Miniconda3-py39_4.12.0-Linux-x86_64.sh</code>
+<blockquote>
+<p>默认安装在 ~/miniconda3<br>
+<code>conda config --set auto_activate_base false</code><br>
+安装后会启动终端的conda环境base，用上面的命令关闭</p>
+</blockquote>
+</li>
+<li>conda常用命令
+<ol>
+<li><code>conda create --name anvenv</code> 创建一个叫做 anvenv 的环境</li>
+<li><code>conda activate anvenv</code> 激活该环境</li>
+<li><code>conda deacticate</code> 退出该环境</li>
+<li><code>conda remove --name anvenv --all</code> 删除该环境</li>
+<li><code>conda info -e</code> 检查conda现有环境</li>
+<li>可以<code>conda install ***</code> 也可以<code>pip install ***</code></li>
+<li>可以修改<code>~\.condarc</code> 换源
+<blockquote>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank" rel="noopener noreffer ">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</a></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>conda 中 django 版本到 3.2.5；django 实际最新版本为 4.1，可用<code>pip</code>安装</li>
+</ol>
+<blockquote>
+<p>根据小程序初版源码判断，使用的django版本为 <code>2.2.2</code></p>
+</blockquote>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-08-18</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-title="基于国产机锐捷工作站与UOS系统的开发环境配置" data-hashtags="国产化,uos,国产芯片"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-hashtag="国产化"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-title="基于国产机锐捷工作站与UOS系统的开发环境配置"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-title="基于国产机锐捷工作站与UOS系统的开发环境配置"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" data-title="基于国产机锐捷工作站与UOS系统的开发环境配置"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%9B%BD%E4%BA%A7%E5%8C%96/">国产化</a>,&nbsp;<a href="/tags/uos/">uos</a>,&nbsp;<a href="/tags/%E5%9B%BD%E4%BA%A7%E8%8A%AF%E7%89%87/">国产芯片</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2023/uso/" class="prev" rel="prev" title="iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>iU+N卡笔记本安装国产UOS/deepin操作系统以及torch+cuda配置</a>
+            <a href="/posts/my-first-post/" class="next" rel="next" title="第一篇测试稿">第一篇测试稿<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ssdreamC.github.io" target="_blank">ssdreamC</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

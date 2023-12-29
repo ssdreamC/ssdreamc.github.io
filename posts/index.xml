@@ -21,18 +21,18 @@
 </item>
 <item>
     <title>基于国产机锐捷工作站与UOS系统的开发环境配置</title>
-    <link>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+    <link>https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Thu, 18 Aug 2022 23:26:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/%E5%9F%BA%E4%BA%8E%E5%9B%BD%E4%BA%A7%E6%9C%BA%E9%94%90%E6%8D%B7%E5%B7%A5%E4%BD%9C%E7%AB%99%E4%B8%8Euos%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[适用 USO 1.0根系统（deepin v23）发布前版本 0. 正常使用建议 原有商店已废弃，sudo apt install deepin-app-store 安装深度商店（已废弃的商店不用卸载） 将 /etc/apt/sources.list 中de]]></description>
 </item>
 <item>
     <title>iU&#43;N卡笔记本安装国产UOS/deepin操作系统以及torch&#43;cuda配置</title>
-    <link>https://ssdreamc.github.io/posts/uso/</link>
+    <link>https://ssdreamc.github.io/posts/2023/uso/</link>
     <pubDate>Fri, 18 Mar 2022 02:20:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/uso/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/uso/</guid>
     <description><![CDATA[与正常安装Windows操作系统区别不大，可以一直点“下一步”直到安装结束。 需要注意的地方可能有三点 一 容量空间变小： 以128G硬盘为例，按照]]></description>
 </item>
 <item>
@@ -45,42 +45,42 @@
 </item>
 <item>
     <title>tech notes</title>
-    <link>https://ssdreamc.github.io/posts/tech/</link>
+    <link>https://ssdreamc.github.io/posts/2023/tech/</link>
     <pubDate>Mon, 13 Sep 2021 03:19:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/tech/</guid>
+    <guid>https://ssdreamc.github.io/posts/2023/tech/</guid>
     <description><![CDATA[about some tech marked 1. spring boot 1.1. PostMapping 属性 name value 请求路由地址 path 指定路由地址 params 指定request中必须包含某些参数值 headers 指定request中必须包含某些指定的head]]></description>
 </item>
 <item>
     <title>谁</title>
-    <link>https://ssdreamc.github.io/posts/old/2020/%E8%B0%81/</link>
+    <link>https://ssdreamc.github.io/posts/2010-2020/2020/%E8%B0%81/</link>
     <pubDate>Thu, 25 Jun 2020 07:28:00 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/old/2020/%E8%B0%81/</guid>
+    <guid>https://ssdreamc.github.io/posts/2010-2020/2020/%E8%B0%81/</guid>
     <description><![CDATA[谁看清风漫起 谁问青云流去 谁知青天长笑 谁明清月清辉]]></description>
 </item>
 <item>
     <title>今日的祝福</title>
-    <link>https://ssdreamc.github.io/posts/old/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</link>
+    <link>https://ssdreamc.github.io/posts/2010-2020/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</link>
     <pubDate>Wed, 27 Nov 2019 04:50:49 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/old/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</guid>
+    <guid>https://ssdreamc.github.io/posts/2010-2020/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</guid>
     <description><![CDATA[日的阳光比岁月静好 今日的天空，也比风儿安详 早期的晨曦，笑得比红叶灿烂 浅浅的酒窝，是否意味着昨夜梦佳 悄悄的笙箫，是否期待着今晚柔霞 再出去走走吧]]></description>
 </item>
 <item>
     <title>橘子皮泡水也有回甘</title>
-    <link>https://ssdreamc.github.io/posts/old/2019/%E6%A9%98%E5%AD%90%E7%9A%AE%E6%B3%A1%E6%B0%B4/</link>
+    <link>https://ssdreamc.github.io/posts/2010-2020/2019/%E6%A9%98%E5%AD%90%E7%9A%AE%E6%B3%A1%E6%B0%B4/</link>
     <pubDate>Wed, 18 Sep 2019 10:26:12 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/old/2019/%E6%A9%98%E5%AD%90%E7%9A%AE%E6%B3%A1%E6%B0%B4/</guid>
+    <guid>https://ssdreamc.github.io/posts/2010-2020/2019/%E6%A9%98%E5%AD%90%E7%9A%AE%E6%B3%A1%E6%B0%B4/</guid>
     <description><![CDATA[前天小师姐送了一只青皮的橘子，我怕酸，放在桌子上一晚。 因为大家都吃过了，所以我第二天边剥橘子边问师姐：“昨天的橘子好吃吗？甜不甜？酸不酸？”]]></description>
 </item>
 <item>
     <title>渐行渐远</title>
-    <link>https://ssdreamc.github.io/posts/old/2018/%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</link>
+    <link>https://ssdreamc.github.io/posts/2010-2020/2018/%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</link>
     <pubDate>Mon, 29 Oct 2018 02:32:20 &#43;0800</pubDate>
     <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/old/2018/%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</guid>
+    <guid>https://ssdreamc.github.io/posts/2010-2020/2018/%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</guid>
     <description><![CDATA[那片叶落 你的影子 继续在我的眼前走过 那般花落 你的声音 依旧在我的耳畔响着 那片雨落 你说遗忘 却成了挂在口中的折磨 那般泪落 你说过往 却作了褪色黑白的错过]]></description>
 </item>
 </channel>
