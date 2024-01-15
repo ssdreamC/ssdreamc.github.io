@@ -3,7 +3,15 @@
         <title>hugo - 标签 - </title>
         <link>https://ssdreamc.github.io/tags/hugo/</link>
         <description>hugo - 标签 - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 19 Aug 2022 11:14:12 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 15 Jan 2024 03:00:00 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>2024新年新气象</title>
+    <link>https://ssdreamc.github.io/posts/202401/</link>
+    <pubDate>Mon, 15 Jan 2024 03:00:00 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/202401/</guid>
+    <description><![CDATA[新年新气象 所以我把电脑系统重做了，纪录一下 再就是，单位现在封了ssh的端口，改http了 初始化我的电脑 增加DefaultTTL，ff reg add &#34;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters&#34; /v]]></description>
+</item>
+<item>
     <title>第一篇测试稿</title>
     <link>https://ssdreamc.github.io/posts/my-first-post/</link>
     <pubDate>Fri, 19 Aug 2022 11:14:12 &#43;0800</pubDate>
