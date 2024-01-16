@@ -3,7 +3,15 @@
         <title>技术 - 分类 - </title>
         <link>https://ssdreamc.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
         <description>技术 - 分类 - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 16 Jan 2024 14:24:59 &#43;0800</lastBuildDate><atom:link href="https://ssdreamc.github.io/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>重启</title>
+    <link>https://ssdreamc.github.io/posts/%E9%87%8D%E5%90%AF/</link>
+    <pubDate>Tue, 16 Jan 2024 14:24:59 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/%E9%87%8D%E5%90%AF/</guid>
+    <description><![CDATA[重启 先进入堡垒机 堡垒机的地址是https://172.16.11.12/#/desktop，然后需要重启的服务器是华为超融合_cms1，17]]></description>
+</item>
+<item>
     <title>命令记录</title>
     <link>https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</pubDate>
