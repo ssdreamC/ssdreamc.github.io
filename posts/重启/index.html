@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ssdreamc.github.io\/posts\/%E9%87%8D%E5%90%AF\/"
-        },"genre": "posts","keywords": "工作","wordcount":  608 ,
+        },"genre": "posts","keywords": "工作","wordcount":  639 ,
         "url": "https:\/\/ssdreamc.github.io\/posts\/%E9%87%8D%E5%90%AF\/","datePublished": "2024-01-16T14:24:59+08:00","dateModified": "2024-01-16T14:24:59+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">重启</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-16">2024-01-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 608 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-16">2024-01-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 639 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -110,11 +110,16 @@
 <ol start="3">
 <li>挂载</li>
 </ol>
-<p>这些命令将 <code>GlusterFS</code> 节点中的三个卷（<code>repo_gv0</code>、<code>webapp_gv1</code>、<code>webapp_gv2</code>）挂载到本地服务器的三个不同目录中</p>
+<blockquote>
+<p>重新启动后，别忘了先切换到root用户</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 切换到root用户</span>
+</span></span><span class="line"><span class="cl">su root 
+</span></span></code></pre></div><p>这些命令将 <code>GlusterFS</code> 节点中的三个卷（<code>repo_gv0</code>、<code>webapp_gv1</code>、<code>webapp_gv2</code>）挂载到本地服务器的三个不同目录中</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mount -t glusterfs CMS-SERVER-01:/repo_gv0 /data/UCMSServer/repo 
 </span></span><span class="line"><span class="cl">mount -t glusterfs CMS-SERVER-01:/webapps_gv1 /data/UCMSServer/tomcat/webapps 
 </span></span><span class="line"><span class="cl">mount -t glusterfs CMS-SERVER-01:/templates_gv2 /data/UCMSServer/templates 
-</span></span></code></pre></div><ol start="4">
+</span></span></code></pre></div><ol>
 <li>系统启动后需要删除一些文件</li>
 </ol>
 <blockquote>
