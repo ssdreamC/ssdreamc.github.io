@@ -3,17 +3,9 @@
         <title></title>
         <link>https://ssdreamc.github.io/</link>
         <description>hello, this is ssdreamC</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 16 Jan 2024 14:24:59 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 15 Jan 2024 03:00:00 &#43;0800</lastBuildDate>
             <atom:link href="https://ssdreamc.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>重启</title>
-    <link>https://ssdreamc.github.io/posts/%E9%87%8D%E5%90%AF/</link>
-    <pubDate>Tue, 16 Jan 2024 14:24:59 &#43;0800</pubDate>
-    <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/%E9%87%8D%E5%90%AF/</guid>
-    <description><![CDATA[重启 先进入堡垒机 堡垒机的地址是https://172.16.11.12/#/desktop，然后需要重启的服务器是华为超融合_cms1，17]]></description>
-</item>
-<item>
     <title>2024新年新气象</title>
     <link>https://ssdreamc.github.io/posts/202401/</link>
     <pubDate>Mon, 15 Jan 2024 03:00:00 &#43;0800</pubDate>
@@ -84,6 +76,14 @@
     <author>ssdreamC</author>
     <guid>https://ssdreamc.github.io/posts/2010-2020/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</guid>
     <description><![CDATA[日的阳光比岁月静好 今日的天空，也比风儿安详 早期的晨曦，笑得比红叶灿烂 浅浅的酒窝，是否意味着昨夜梦佳 悄悄的笙箫，是否期待着今晚柔霞 再出去走走吧]]></description>
+</item>
+<item>
+    <title>橘子皮泡水也有回甘</title>
+    <link>https://ssdreamc.github.io/posts/2010-2020/2019/%E6%A9%98%E5%AD%90%E7%9A%AE%E6%B3%A1%E6%B0%B4/</link>
+    <pubDate>Wed, 18 Sep 2019 10:26:12 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/2010-2020/2019/%E6%A9%98%E5%AD%90%E7%9A%AE%E6%B3%A1%E6%B0%B4/</guid>
+    <description><![CDATA[前天小师姐送了一只青皮的橘子，我怕酸，放在桌子上一晚。 因为大家都吃过了，所以我第二天边剥橘子边问师姐：“昨天的橘子好吃吗？甜不甜？酸不酸？”]]></description>
 </item>
 </channel>
 </rss>
