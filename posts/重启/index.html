@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ssdreamc.github.io\/posts\/%E9%87%8D%E5%90%AF\/"
-        },"genre": "posts","keywords": "工作","wordcount":  639 ,
+        },"genre": "posts","keywords": "工作","wordcount":  628 ,
         "url": "https:\/\/ssdreamc.github.io\/posts\/%E9%87%8D%E5%90%AF\/","datePublished": "2024-01-16T14:24:59+08:00","dateModified": "2024-01-16T14:24:59+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">重启</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-16">2024-01-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 639 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-16">2024-01-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 628 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -95,12 +95,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 杀死java进程</span>
 </span></span><span class="line"><span class="cl">killall java
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看是否还有 java 进程</span>
+</span></span></code></pre></div><p><del>查看是否还有 java 进程，反正看不看都要重启了要不就不看了？？？</del></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 下面是查看是否有java进程，按照新胜的说法，应该是还会有别的杀不死的僵尸进程</span>
 </span></span><span class="line"><span class="cl">ps aux <span class="p">|</span> grep java
-</span></span></code></pre></div><p>如果查看java后，系统显示只有一条类似如下的结果，证明杀死了，但按照新胜的说法，应该是还会有别的杀不死的僵尸进程</p>
-<pre tabindex="0"><code>wokeji   23381  0.0  0.0 112812   980 pts/0    S+   14:31   0:00 grep --color=auto java
-</code></pre><ol start="2">
+</span></span></code></pre></div><ol start="2">
 <li>
 <p>然后重启服务器：</p>
 <p><code>reboot</code></p>
