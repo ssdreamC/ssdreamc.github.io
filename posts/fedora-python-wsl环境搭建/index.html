@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>fedora-python-wsl环境搭建 - </title><meta name="Description" content="hello, this is ssdreamC"><meta property="og:title" content="fedora-python-wsl环境搭建" />
+<meta property="og:description" content="fedora-python-wsl环境搭建 在 10.59 服务器上运行 python 时偶尔会遇到由于开发环境不同导致的 bug 因此在本地搭建一个类似环境可以起到一定的测试" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-27T14:45:12+08:00" />
+<meta property="article:modified_time" content="2024-02-27T14:45:12+08:00" /><meta property="og:site_name" content="ssdreamC·凉月" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="fedora-python-wsl环境搭建"/>
+<meta name="twitter:description" content="fedora-python-wsl环境搭建 在 10.59 服务器上运行 python 时偶尔会遇到由于开发环境不同导致的 bug 因此在本地搭建一个类似环境可以起到一定的测试"/>
+<meta name="application-name" content="ssdreamC·凉月">
+<meta name="apple-mobile-web-app-title" content="ssdreamC·凉月"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" /><link rel="prev" href="https://ssdreamc.github.io/posts/202401/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "fedora-python-wsl环境搭建",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ssdreamc.github.io\/posts\/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA\/"
+        },"genre": "posts","keywords": "记录","wordcount":  821 ,
+        "url": "https:\/\/ssdreamc.github.io\/posts\/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA\/","datePublished": "2024-02-27T14:45:12+08:00","dateModified": "2024-02-27T14:45:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "ssdreamC"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">ssdreamC·凉月</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="内容"> 内容 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">ssdreamC·凉月</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="内容">内容</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">fedora-python-wsl环境搭建</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%AE%B0%E5%BD%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>记录</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-27">2024-02-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 821 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#0-服务器">0. 服务器</a></li>
+    <li><a href="#1-本地-wsl">1. 本地 wsl</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="fedora-python-wsl环境搭建">fedora-python-wsl环境搭建</h1>
+<blockquote>
+<p>在 10.59 服务器上运行 python 时偶尔会遇到由于开发环境不同导致的 bug<br>
+因此在本地搭建一个类似环境可以起到一定的测试效果，避免一些不必要的问题</p>
+</blockquote>
+<h2 id="0-服务器">0. 服务器</h2>
+<p>在服务器上查看系统版本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>wokeji@dev1 ~<span class="o">]</span>$ cat /etc/os-release
+</span></span><span class="line"><span class="cl"><span class="nv">NAME</span><span class="o">=</span><span class="s2">&#34;CentOS Linux&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VERSION</span><span class="o">=</span><span class="s2">&#34;7 (Core)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">ID</span><span class="o">=</span><span class="s2">&#34;centos&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">ID_LIKE</span><span class="o">=</span><span class="s2">&#34;rhel fedora&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VERSION_ID</span><span class="o">=</span><span class="s2">&#34;7&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">PRETTY_NAME</span><span class="o">=</span><span class="s2">&#34;CentOS Linux 7 (Core)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">ANSI_COLOR</span><span class="o">=</span><span class="s2">&#34;0;31&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">CPE_NAME</span><span class="o">=</span><span class="s2">&#34;cpe:/o:centos:centos:7&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">HOME_URL</span><span class="o">=</span><span class="s2">&#34;https://www.centos.org/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">BUG_REPORT_URL</span><span class="o">=</span><span class="s2">&#34;https://bugs.centos.org/&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">CENTOS_MANTISBT_PROJECT</span><span class="o">=</span><span class="s2">&#34;CentOS-7&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">CENTOS_MANTISBT_PROJECT_VERSION</span><span class="o">=</span><span class="s2">&#34;7&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">REDHAT_SUPPORT_PRODUCT</span><span class="o">=</span><span class="s2">&#34;centos&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">REDHAT_SUPPORT_PRODUCT_VERSION</span><span class="o">=</span><span class="s2">&#34;7&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>wokeji@dev1 ~<span class="o">]</span>$ python
+</span></span><span class="line"><span class="cl">Python 3.10.4 <span class="o">(</span>main, Oct <span class="m">25</span> 2022, 18:28:12<span class="o">)</span> <span class="o">[</span>GCC 8.3.1 <span class="m">20190311</span> <span class="o">(</span>Red Hat 8.3.1-3<span class="o">)]</span> on linux
+</span></span><span class="line"><span class="cl">Type <span class="s2">&#34;help&#34;</span>, <span class="s2">&#34;copyright&#34;</span>, <span class="s2">&#34;credits&#34;</span> or <span class="s2">&#34;license&#34;</span> <span class="k">for</span> more information.
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt; exit<span class="o">()</span>
+</span></span></code></pre></div><p>由于 cent os 7 即将停止维护，我选择了 <code>fedora 39</code>，并没有追求与服务器环境的完全一致，不过 <code>python</code>是一定要选择同版本的 <code>3.10.4</code> 的。</p>
+<h2 id="1-本地-wsl">1. 本地 wsl</h2>
+<p>步骤不复杂：</p>
+<p>微软官方提供了很完善的<a href="https://learn.microsoft.com/zh-cn/windows/wsl/use-custom-distro" target="_blank" rel="noopener noreffer ">文档</a>。说明中要求：</p>
+<ul>
+<li>必须在安装了运行 WSL 2 的 Linux 发行版的情况下启用 WSL。</li>
+<li>必须安装了适用于 Windows 的 Docker Desktop，启用了 WSL 2 引擎并选中了集成，请参阅 Docker Desktop 许可协议，了解使用条款的更新。</li>
+</ul>
+<p>但我们不完全按照文档来，可以忽略第二个必须要求</p>
+<ol>
+<li><code> wsl.exe --install</code></li>
+</ol>
+<blockquote>
+<p>这一步除了会安装好 <code>wsl</code> 相关组件外还会安装一个 <code>Ubuntu</code>，这样便满足了第一项要求<br>
+注意安装后可能需要一次重启<br>
+之后可以  <code>wsl --unregister Ubuntu</code> 来卸载掉这个 <code>Ubuntu</code></p>
+</blockquote>
+<ol start="2">
+<li>下载tar包</li>
+</ol>
+<blockquote>
+<p>按照文档，应该是先创建镜像，然后导出 tar 包<br>
+在 <a href="https://koji.fedoraproject.org" target="_blank" rel="noopener noreffer ">https://koji.fedoraproject.org</a> 直接下载所需 tar 包，这样便不需要在本地安装<code>docker</code><br>
+我下载的是 <a href="https://kojipkgs.fedoraproject.org//packages/Fedora-Container-Base/39/20240222.0/images/Fedora-Container-Base-39-20240222.0.x86_64.tar.xz" target="_blank" rel="noopener noreffer ">Fedora-Container-Base-39-20240222.0.x86_64.tar.xz</a></p>
+</blockquote>
+<ol start="3">
+<li>解压 xz 文件</li>
+</ol>
+<blockquote>
+<p>里面的Fedora-Container-Base-39-20240222.0.x86_64.tar 还需要再打开<br>
+在里面还有一个 <code>layer.tar</code>，这才是我们需要的文件<br>
+将 <code>layer.tar</code> 提取出来</p>
+</blockquote>
+<ol start="4">
+<li>配置wsl</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 创建 wsl 存储目录</span>
+</span></span><span class="line"><span class="cl">mkdir <span class="nv">$HOME</span><span class="se">\w</span>sl<span class="se">\f</span>edora
+</span></span><span class="line"><span class="cl"><span class="c1"># 导入 tar 文件</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># wsl --import &lt;Distro&gt; &lt;InstallLocation&gt; &lt;FileName&gt;</span>
+</span></span><span class="line"><span class="cl">wsl --import fedora <span class="nv">$HOME</span><span class="se">\w</span>sl<span class="se">\f</span>edora <span class="nv">$HOME</span><span class="se">\D</span>ownloads<span class="se">\f</span>edora-35-rootfs<span class="se">\l</span>ayer.tar
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看目前已存在的子系统</span>
+</span></span><span class="line"><span class="cl">wsl -l
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置默认发行版</span>
+</span></span><span class="line"><span class="cl">wsl -s fedora
+</span></span><span class="line"><span class="cl"><span class="c1"># 打开指定发行版</span>
+</span></span><span class="line"><span class="cl">wsl -d fedora
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#查看正在运行的子系统</span>
+</span></span><span class="line"><span class="cl">wsl --list --running
+</span></span><span class="line"><span class="cl"><span class="c1"># exit 可以退出 wsl</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># wsl --shutdown 关闭所有在运行的子系统</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># wsl --terminate &lt;Distribution Name&gt; 关闭指定子系统</span>
+</span></span><span class="line"><span class="cl">wsl --terminate &lt;Distribution Name&gt;
+</span></span></code></pre></div><ol start="5">
+<li>配置python</li>
+</ol>
+<p>编译安装，不能直接 <code>make install</code>，fedora 的 dnf 包管理是基于 python 的，直接替换默认的 python 版本会导致 dnf 不能正常运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 安装 编译工具链</span>
+</span></span><span class="line"><span class="cl">sudo dnf groupinstall <span class="s1">&#39;Development Tools&#39;</span>
+</span></span><span class="line"><span class="cl">sudo dnf install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel libdb-devel libpcap-devel xz-devel open-ssl
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 下载 python3.10.4 源码</span>
+</span></span><span class="line"><span class="cl">wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
+</span></span><span class="line"><span class="cl">tar -xzf Python-3.10.4.tgz
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> Python-3.10.4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 编译安装</span>
+</span></span><span class="line"><span class="cl">./configure --prefix<span class="o">=</span>/usr/local/opt/python-3.10.4 --enable-optimizations
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span><span class="line"><span class="cl">sudo make altinstall
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建软链接</span>
+</span></span><span class="line"><span class="cl">sudo ln -sf /usr/local/opt/python-3.10.4/bin/python3.10 /usr/bin/python310
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 准备虚拟环境</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> py
+</span></span><span class="line"><span class="cl">python310 -m venv venv310
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-02-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" data-title="fedora-python-wsl环境搭建" data-hashtags="记录"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" data-hashtag="记录"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" data-title="fedora-python-wsl环境搭建"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" data-title="fedora-python-wsl环境搭建"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" data-title="fedora-python-wsl环境搭建"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/202401/" class="prev" rel="prev" title="2024新年新气象"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>2024新年新气象</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ssdreamC.github.io" target="_blank">ssdreamC</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
