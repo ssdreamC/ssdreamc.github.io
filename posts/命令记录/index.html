@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/ssdreamc.github.io\/posts\/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95\/"
-        },"genre": "posts","keywords": "cmd, powershell, sql, git","wordcount":  1578 ,
+        },"genre": "posts","keywords": "cmd, powershell, sql, git","wordcount":  1718 ,
         "url": "https:\/\/ssdreamc.github.io\/posts\/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95\/","datePublished": "2023-04-25T09:00:00+08:00","dateModified": "2023-04-25T09:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">命令记录</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="ssdreamC.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>ssdreamC</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-25">2023-04-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1578 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-25">2023-04-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1718 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -121,6 +121,11 @@
       <ul>
         <li><a href="#git-clone-后的子模块">git clone 后的子模块</a></li>
         <li><a href="#github-fork">github fork</a></li>
+      </ul>
+    </li>
+    <li><a href="#nodejs">nodejs</a>
+      <ul>
+        <li><a href="#pnpm-管理-nodejs">pnpm 管理 nodejs</a></li>
       </ul>
     </li>
   </ul>
@@ -269,6 +274,27 @@ E86B00000084C0EB56566A00</p>
 </span></span><span class="line"><span class="cl">git rebase upstream/master
 </span></span><span class="line"><span class="cl"><span class="c1"># 更新自己的仓库</span>
 </span></span><span class="line"><span class="cl">git push origin master
+</span></span></code></pre></div><h2 id="nodejs">nodejs</h2>
+<h3 id="pnpm-管理-nodejs">pnpm 管理 nodejs</h3>
+<p>首先安装 pnpm： curl -fsSL <a href="https://get.pnpm.io/install.sh" target="_blank" rel="noopener noreffer ">https://get.pnpm.io/install.sh</a> | sh - ，然后就可以使用 pnpm env 管理 nodejs 版本了。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pnpm env list
+</span></span><span class="line"><span class="cl">pnpm env list --remote
+</span></span><span class="line"><span class="cl"><span class="c1"># 列出本地或远程可用的 Node.js 版本</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pnpm env use --global &lt;version&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装并使用指定版本的 Node.js</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># lts 版本：</span>
+</span></span><span class="line"><span class="cl">pnpm env use --global lts
+</span></span><span class="line"><span class="cl"><span class="c1"># latest 版本：</span>
+</span></span><span class="line"><span class="cl">pnpm env use --global latest
+</span></span><span class="line"><span class="cl"><span class="c1"># codenames：</span>
+</span></span><span class="line"><span class="cl">pnpm env use --global Gallium
+</span></span><span class="line"><span class="cl"><span class="c1"># v16：</span>
+</span></span><span class="line"><span class="cl">pnpm env use --global <span class="m">16</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pnpm env remove --global &lt;version&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 移除指定版本的 Node.js</span>
+</span></span><span class="line"><span class="cl">pnpm env remove --global 14.0.0
 </span></span></code></pre></div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -295,7 +321,7 @@ E86B00000084C0EB56566A00</p>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.121.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ssdreamC.github.io" target="_blank">ssdreamC</a></span></div>
         </div>
     </footer></div>
