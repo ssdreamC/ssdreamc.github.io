@@ -3,9 +3,17 @@
         <title></title>
         <link>https://ssdreamc.github.io/</link>
         <description>hello, this is ssdreamC</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 27 Feb 2024 14:45:12 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 30 May 2024 11:08:11 &#43;0800</lastBuildDate>
             <atom:link href="https://ssdreamc.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>山花寻海树，不如就春风</title>
+    <link>https://ssdreamc.github.io/posts/bad/%E5%B1%B1%E8%8A%B1%E5%AF%BB%E6%B5%B7%E6%A0%91%E4%B8%8D%E5%A6%82%E5%B0%B1%E6%98%A5%E9%A3%8E/</link>
+    <pubDate>Thu, 30 May 2024 11:08:11 &#43;0800</pubDate>
+    <author>ssdreamC</author>
+    <guid>https://ssdreamc.github.io/posts/bad/%E5%B1%B1%E8%8A%B1%E5%AF%BB%E6%B5%B7%E6%A0%91%E4%B8%8D%E5%A6%82%E5%B0%B1%E6%98%A5%E9%A3%8E/</guid>
+    <description><![CDATA[我的评价：媽的智障 山花寻海树，不如就春风 坐在不知道第多少次开往河西的高铁上，漫长的隧道和漆黑吞没、网络断断续续几乎没有，以前总是不知道该如何]]></description>
+</item>
+<item>
     <title>fedora-python-wsl环境搭建</title>
     <link>https://ssdreamc.github.io/posts/fedora-python-wsl%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Tue, 27 Feb 2024 14:45:12 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <author>ssdreamC</author>
     <guid>https://ssdreamc.github.io/posts/2010-2020/2020/%E8%B0%81/</guid>
     <description><![CDATA[谁看清风漫起 谁问青云流去 谁知青天长笑 谁明清月清辉]]></description>
-</item>
-<item>
-    <title>今日的祝福</title>
-    <link>https://ssdreamc.github.io/posts/2010-2020/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</link>
-    <pubDate>Wed, 27 Nov 2019 04:50:49 &#43;0800</pubDate>
-    <author>ssdreamC</author>
-    <guid>https://ssdreamc.github.io/posts/2010-2020/2019/%E4%BB%8A%E6%97%A5%E7%9A%84%E7%A5%9D%E7%A6%8F/</guid>
-    <description><![CDATA[日的阳光比岁月静好 今日的天空，也比风儿安详 早期的晨曦，笑得比红叶灿烂 浅浅的酒窝，是否意味着昨夜梦佳 悄悄的笙箫，是否期待着今晚柔霞 再出去走走吧]]></description>
 </item>
 </channel>
 </rss>
