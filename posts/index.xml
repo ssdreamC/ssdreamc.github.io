@@ -25,7 +25,7 @@
     <pubDate>Tue, 25 Apr 2023 09:00:00 &#43;0800</pubDate>
     <author>ssdreamC</author>
     <guid>https://ssdreamc.github.io/posts/%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[命令记录 windows 开机启动项 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run cmd、pw 修改硬件时间为UTC PS C:\Users\kuail&gt; Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1 解除 powershell 的签名要求 PS C:\Windows\system32&gt; Get-ExecutionPolicy Restricted PS C:\Windows\system32&gt; set-ExecutionPolicy RemoteSigned 执行策略更改 执行策略可帮助你]]></description>
+    <description><![CDATA[命令记录 uos # 消除桌面水印 gsettings set com.deepin.dde.filemanager.desktop water-mask false windows 开机启动项 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run cmd、pw 修改硬件时间为UTC PS C:\Users\kuail&gt; Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1 解除 powershell 的签名要求 PS C:\Windows\system32&gt; Get-ExecutionPolicy Restricted PS C:\Windows\system32&gt; set-ExecutionPolicy RemoteSigned 执]]></description>
 </item>
 <item>
     <title>第一篇测试稿</title>
